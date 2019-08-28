@@ -1,0 +1,889 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Sophos News\n"
+"POT-Creation-Date: 2017-03-10 10:58+0000\n"
+"PO-Revision-Date: 2017-04-07 15:05+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0\n"
+"X-Poedit-Basepath: ../../build\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:15
+msgid "404"
+msgstr ""
+
+#: 404.php:19
+msgid "The page requested could not be found."
+msgstr "La pagina richiesta non è stata trovata."
+
+#: author-article-block.php:6
+msgid "About the Author"
+msgstr "L'autore"
+
+#: author-article-block.php:20
+msgid "More from"
+msgstr "Mostra di più da"
+
+#: comments.php:29
+#, php-format
+msgctxt "Comments section title"
+msgid "<span>%s</span> Comment"
+msgid_plural "<span>%s</span> Comments"
+msgstr[0] "<span>%s</span> Commento"
+msgstr[1] "<span>%s</span> Commenti"
+
+#: comments.php:46
+msgid "Comment navigation"
+msgstr "Navigazione dei commenti"
+
+#: comments.php:47
+msgid "Older Comments"
+msgstr "Commenti precedenti"
+
+#: comments.php:48
+msgid "Newer Comments"
+msgstr "Commenti più recenti"
+
+#: comments.php:58
+msgid "Comments are closed."
+msgstr "I commenti sono chiusi."
+
+#: content-fourth.php:5
+msgid "View Article"
+msgstr "Visualizza l'articolo"
+
+#: content-none.php:13
+msgid "Nothing Found"
+msgstr "La pagina richiesta non è stata trovata"
+
+#: content-none.php:18
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Pronto a pubblicare il tuo primo post? <a href=\"%1$s\">Inizia qui</a>."
+
+#: content-none.php:26
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Ci dispiace, ma nulla corrisponde con i tuoi termini di ricerca. Riprova "
+"con parole chiave diverse."
+
+#: content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+"A quanto pare non siamo in grado di trovare quello che stai cercando. Forse "
+"la ricerca può aiutare."
+
+#: content-page.php:21 content-single.php:39 content.php:31
+#: templates/full-width-title-excerpt-image.php:50
+#: templates/full-width-title-excerpt-overlay-image.php:51
+msgid "Pages:"
+msgstr "Pagine:"
+
+#: content-page.php:29 inc/template-tags/entry-footer.php:32
+msgid "Edit"
+msgstr "Modifica"
+
+#: content.php:25
+#, php-format
+msgid "Continue Reading %s"
+msgstr "Continua a leggere %s"
+
+#: footer.php:29
+msgid "Popular"
+msgstr "Popolare"
+
+#: footer.php:41
+msgid "Community"
+msgstr "Community"
+
+#: footer.php:53
+msgid "Work With Us"
+msgstr "Lavora con noi"
+
+#: footer.php:65
+msgid "About Sophos"
+msgstr "Notizie su Sophos"
+
+#: footer.php:77
+msgid "Support"
+msgstr "Supporto"
+
+#: footer.php:96
+msgid "Sophos Ltd. All rights reserved"
+msgstr "Sophos Ltd. Tutti i diritti riservati"
+
+#: header.php:22
+msgid "Skip to content"
+msgstr "Salta al contenuto"
+
+#: inc/class-sophos-comment-walker.php:71
+msgid "Edit this comment"
+msgstr "Modifica questo commento"
+
+#: inc/class-sophos-comment-walker.php:73
+msgid "Your comment is awaiting moderation."
+msgstr "Il tuo commento è in attesa di moderazione."
+
+#: inc/extras.php:52
+#, php-format
+msgid "Page %s"
+msgstr "Pagina %s"
+
+#: inc/field-manager.php:48
+msgid "Related Posts"
+msgstr "Post correlati"
+
+#: inc/init.php:41
+msgid "Primary Header Menu"
+msgstr "Header Menu primario"
+
+#: inc/init.php:42
+msgid "Secondary Header Menu"
+msgstr "Header Menu secondario"
+
+#: inc/init.php:43
+msgid "News Header Menu"
+msgstr "Menu dell'Header Notizie"
+
+#: inc/init.php:44
+msgid "Footer - Social"
+msgstr "Piè di pagina - Social"
+
+#: inc/init.php:45
+msgid "Footer - Popular"
+msgstr "Piè di pagina - Popolare"
+
+#: inc/init.php:46
+msgid "Footer - Community"
+msgstr "Piè di pagina - Community"
+
+#: inc/init.php:47
+msgid "Footer - Work With Us"
+msgstr "Piè di pagina - Lavora con noi"
+
+#: inc/init.php:48
+msgid "Footer - About Sophos"
+msgstr "Piè di pagina - Notizie su Sophos"
+
+#: inc/init.php:49
+msgid "Footer - Support"
+msgstr "Piè di pagina - Supporto"
+
+#: inc/init.php:50
+msgid "Footer - Legal"
+msgstr "Piè di pagina - Legale"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-about.php:27
+msgctxt "Footer link to the careers page"
+msgid "Jobs/Careers"
+msgstr "Lavoro/Carriere"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-about.php:32
+msgctxt "Footer link to the products page"
+msgid "Products"
+msgstr "Prodotti"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-about.php:37
+msgctxt "Footer link to the feedback page"
+msgid "Feedback"
+msgstr "Feedback"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-about.php:42
+msgctxt "Footer link to the contact page"
+msgid "Contact Us"
+msgstr "Contatti"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-about.php:47
+msgctxt "Footer link to the press page"
+msgid "Press"
+msgstr "Stampa"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-about.php:52
+msgctxt "Footer link to the modern slavery statement"
+msgid "Modern Slavery Statement"
+msgstr "Modern Slavery Statement"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-community.php:27
+msgctxt "Footer link to Sophos News"
+msgid "Sophos News"
+msgstr "Sophos News"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-community.php:32
+msgctxt "Footer link to community page"
+msgid "Social Networks"
+msgstr "Social Network"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-community.php:37
+msgctxt "Footer link to Naked Security"
+msgid "Naked Security News"
+msgstr "Naked Security News"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-community.php:42
+msgctxt "Footer link to Podcasts page"
+msgid "Podcasts"
+msgstr "Podcast"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-community.php:47
+msgctxt "Footer link to RSS feeds page"
+msgid "RSS"
+msgstr "RSS"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-popular.php:27
+msgctxt "Footer link to free trials page"
+msgid "Free Trials"
+msgstr "Prove gratuite"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-popular.php:32
+msgctxt "Footer link to free tools page"
+msgid "Free Tools"
+msgstr "Strumenti gratuiti"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-popular.php:37
+msgctxt "Footer link to whitepapers page"
+msgid "Whitepapers"
+msgstr "Whitepaper"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-popular.php:42
+msgctxt "Footer link to technical papers page"
+msgid "Technical Papers"
+msgstr "Documenti tecnici"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-popular.php:47
+msgctxt "Footer link to \"How to Buy Sophos Products\" page"
+msgid "Buy Online"
+msgstr "Acquista online"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-popular.php:52
+msgctxt "Footer link to shops.sophos.com"
+msgid "Sophos Brand Store"
+msgstr "Sophos Brand Store"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-popular.php:86
+msgctxt "Footer link to contact link page"
+msgid "Contact"
+msgstr "Contatti"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:27
+msgctxt "Main menu link to Products page"
+msgid "Products"
+msgstr "Prodotti"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:33
+msgctxt "Main menu link to XG Firewall page"
+msgid "XG Firewall"
+msgstr "XG Firewall"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:35
+msgctxt "Short description of XG Firewall in main sophos.com menu"
+msgid "The next thing in next-gen."
+msgstr "Il prossimo passo nella next-gen."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:38
+msgctxt "Main menu link to SG UTM page"
+msgid "SG UTM"
+msgstr "SG UTM"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:40
+msgctxt "Short description of SG UTM in main sophos.com menu"
+msgid "The ultimate network security package."
+msgstr "Il pacchetto di sicurezza della rete definitivo."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:43
+msgctxt "Main menu link to Secure Wi-Fi page"
+msgid "Secure Wi-Fi"
+msgstr "Wi-Fi sicuro"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:45
+msgctxt "Short description of Secure Wi-Fi in main sophos.com menu"
+msgid "Super secure, super wi-fi."
+msgstr "Super sicuro, super wi-fi."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:48
+msgctxt "Main menu link to Secure Web Gateway page"
+msgid "Secure Web Gateway"
+msgstr "Web Gateway sicuro"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:50
+msgctxt "Short description of Secure Web Gateway in main sophos.com menu"
+msgid "Complete web protection everywhere."
+msgstr "Protezione web completa ovunque."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:53
+msgctxt "Main menu link to Secure Email Gateway page"
+msgid "Secure Email Gateway"
+msgstr "Email Gateway sicuro"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:55
+msgctxt "Short description of Secure Email Gateway in main sophos.com menu"
+msgid "Simple protection for a complex problem."
+msgstr "Una protezione semplice per un problema complesso."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:58
+msgctxt "Main menu link to PureMessage page"
+msgid "PureMessage"
+msgstr "PureMessage"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:60
+msgctxt "Short description of PureMessage in main sophos.com menu"
+msgid "Good news for you. Bad news for spam."
+msgstr "Buone notizie per te. Cattive notizie per lo spam."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:63
+msgctxt "Main menu link to Endpoint Protection page"
+msgid "Endpoint Protection"
+msgstr "Protezione degli Endpoint"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:65
+msgctxt "Short description of Endpoint Protection in main sophos.com menu"
+msgid "Comprehensive security for users and data."
+msgstr "Sicurezza globale per utenti e dati."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:68
+msgctxt "Main menu link to Intercept X page"
+msgid "Intercept X"
+msgstr "Intercept X"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:70
+msgctxt "Short description of Intercept X in main sophos.com menu"
+msgid "A completely new approach to endpoint security."
+msgstr "Un approccio completamente nuovo alla sicurezza endpoint."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:73
+msgctxt "Main menu link to Sophos Clean page"
+msgid "Sophos Clean"
+msgstr "Sophos Clean"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:75
+msgctxt "Short description of Sophos Clean in main sophos.com menu"
+msgid "Advanced scanner and malware removal tool."
+msgstr "Scanner e strumento per la rimozione del malware avanzati."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:78
+msgctxt "Main menu link to page about Mobile Control"
+msgid "Mobile Control"
+msgstr "Mobile Control"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:80
+msgctxt "Short description of Mobile Control in main sophos.com menu"
+msgid "Countless devices, one solution."
+msgstr "Dispositivi infiniti, una sola soluzione."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:83
+msgctxt "Main menu link to SafeGuard Encryption page"
+msgid "SafeGuard Encryption"
+msgstr "SafeGuard Encryption"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:85
+msgctxt "Short description of SafeGuard Encryption in main sophos.com menu"
+msgid "Protecting your data, wherever it goes."
+msgstr "I tuoi dati protetti, ovunque vadano."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:88
+msgctxt "Main menu link to Server Protection page"
+msgid "Server Protection"
+msgstr "Protezione Server"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:90
+msgctxt "Short description of Server Protection in main sophos.com menu"
+msgid "Security optimized for servers."
+msgstr "Sicurezza ottimizzata per i server."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:93
+msgctxt "Main menu link to product page of Sophos Home"
+msgid "Sophos Home"
+msgstr "Sophos Home"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:95
+msgctxt "Short description of Sophos Home in main sophos.com menu"
+msgid "Free protection for home computers."
+msgstr "Protezione gratuita per i computer domestici."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:100
+msgctxt "Main menu link to Solutions page"
+msgid "Solutions"
+msgstr "Soluzioni"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:106
+msgctxt "Main menu link to Industries page"
+msgid "Industries"
+msgstr "Settori"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:108
+msgctxt "Short description of Industries in main sophos.com menu"
+msgid "Your industry. Our expertise."
+msgstr "Il tuo settore. La nostra esperienza."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:111
+msgctxt "Main menu link to IT Initiatives page"
+msgid "IT Initiatives"
+msgstr "Iniziative IT"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:113
+msgctxt "Short description of IT Initiatives in main sophos.com menu"
+msgid "Embrace IT initiatives with confidence."
+msgstr "Sfrutta le iniziative IT con fiducia."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:116
+msgctxt "Main menu link to Compliance page"
+msgid "Compliance"
+msgstr "Conformità"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:118
+msgctxt "Short description of Compliance in main sophos.com menu"
+msgid "Helping you to stay regulatory compliant."
+msgstr "Vi aiutamo a mantenere la conformità normativa."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:121
+msgctxt "Main menu link to OEM Solutions page"
+msgid "OEM Solutions"
+msgstr "Soluzioni OEM"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:123
+msgctxt "Short description of OEM Solutions in main sophos.com menu"
+msgid "Trusted by world-leading brands."
+msgstr "Scelti da marchi leader a livello mondiale."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:126
+msgctxt "Main menu link to Professional Services page"
+msgid "Professional Services"
+msgstr "Servizi Professionali"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:128
+msgctxt "Short description of Professional Services in main sophos.com menu"
+msgid "Our experience. Your peace of mind."
+msgstr "La nostra esperienza. La tua tranquillità."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:131
+msgctxt "Main menu link to SophosLabs page"
+msgid "SophosLabs"
+msgstr "SophosLabs"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:133
+msgctxt "Short description of SophosLabs in main sophos.com menu"
+msgid "Behind the scene of our 24/7 security."
+msgstr "Dietro le quinte della nostra sicurezza 24/7."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:136
+msgctxt "Main menu link to Public Cloud page"
+msgid "Public Cloud"
+msgstr "Cloud pubblico"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:138
+msgctxt "Short description of Public Cloud in main sophos.com menu"
+msgid "Stronger, simpler cloud security."
+msgstr "Sicurezza cloud più forte, più semplice."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:143
+msgctxt "Main menu link to Partners page"
+msgid "Partners"
+msgstr "Partners"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:148
+msgctxt "Main menu link to Support page"
+msgid "Support"
+msgstr "Supporto"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:153
+msgctxt "Main menu link to Company page"
+msgid "Company"
+msgstr "Azienda"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:158
+msgctxt "Main menu link to Downloads page"
+msgid "Downloads"
+msgstr "Download"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:164
+msgctxt "Main menu link to Free Trials page"
+msgid "Free Trials"
+msgstr "Prove gratuite"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:166
+msgctxt "Short description of Free Trials in main sophos.com menu"
+msgid "All product trials in one place."
+msgstr "Tutte le prove prodotto in un unico posto."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:169
+msgctxt "Main menu link to Free Tools page"
+msgid "Free Tools"
+msgstr "Strumenti gratuiti"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:171
+msgctxt "Short description of Free Tools in main sophos.com menu"
+msgid "Try our tools for use at home."
+msgstr "Prova i nostri strumenti per uso domestico."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:174
+msgctxt "Main menu link to Get Pricing page"
+msgid "Get Pricing"
+msgstr "Listino prezzi"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:176
+msgctxt "Short description of Get Pricing in main sophos.com menu"
+msgid "The right price every time."
+msgstr "Ogni volta il prezzo giusto."
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:181
+msgctxt "Main menu link to Search page"
+msgid "Search"
+msgstr "Cerca"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:186
+msgctxt "Main menu link to Sign In page"
+msgid "Sign In"
+msgstr "Accedi"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-primary.php:216
+msgctxt "Main menu link to SophosLabs page"
+msgid "Labs"
+msgstr "Laboratori"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-secondary.php:27
+msgctxt "Main menu link to Overview page"
+msgid "Overview"
+msgstr "Panoramica"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-secondary.php:32
+msgctxt "Main menu link to Investors page"
+msgid "Investors"
+msgstr "Investitori"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-secondary.php:37
+msgctxt "Main menu link to Press page"
+msgid "Press"
+msgstr "Stampa"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-secondary.php:42
+msgctxt "Main menu link to Events page"
+msgid "Events"
+msgstr "Eventi"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-secondary.php:47
+msgctxt "Main menu link to Community page"
+msgid "Community"
+msgstr "Community"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-secondary.php:52
+msgctxt "Main menu link to Sophos News"
+msgid "Blog"
+msgstr "Blog"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-secondary.php:57
+msgctxt "Main menu link to Careers page"
+msgid "Careers"
+msgstr "Carriere"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-secondary.php:62
+msgctxt "Main menu link to Contact page"
+msgid "Contact"
+msgstr "Contatti"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-social.php:64
+#: inc/plugins/sophos/Sophos/Region/Menu/class-social.php:99
+msgid "Facebook"
+msgstr "Facebook"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-social.php:69
+#: inc/plugins/sophos/Sophos/Region/Menu/class-social.php:104
+msgid "Twitter"
+msgstr "Twitter"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-social.php:74
+#: inc/plugins/sophos/Sophos/Region/Menu/class-social.php:109
+msgid "YouTube"
+msgstr "YouTube"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-support.php:27
+msgctxt "Footer link to support packages page"
+msgid "Extended Warranties"
+msgstr "Estensioni di garanzia"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-support.php:32
+msgctxt "Footer link to support knowledgebase"
+msgid "Knowledgebase"
+msgstr "Knowledgebase"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-support.php:37
+msgctxt "Footer link to downloads page"
+msgid "Downloads & Updates"
+msgstr "Download e aggiornamenti"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-support.php:42
+msgctxt "Footer link to support documentation"
+msgid "Documentation"
+msgstr "Documentazione"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-support.php:47
+msgctxt "Footer link to professional services page"
+msgid "Professional Services"
+msgstr "Servizi Professionali"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-support.php:52
+msgctxt "Footer link to training page"
+msgid "Training"
+msgstr "Training"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-work.php:27
+msgctxt "Footer link to the partner application form"
+msgid "Become a Partner"
+msgstr "Diventa Partner"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-work.php:32
+msgctxt "Footer link to the partner portal"
+msgid "Partner Portal (login)"
+msgstr "Partner Portal (login)"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-work.php:37
+msgctxt "Footer link to the resellers page"
+msgid "Resellers"
+msgstr "Rivenditori"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-work.php:42
+msgctxt "Footer link to the partners' page"
+msgid "Tech Partners"
+msgstr "Partner tecnologici"
+
+#: inc/plugins/sophos/Sophos/Region/Menu/class-work.php:47
+msgctxt "Footer link to the OEM solutions page"
+msgid "OEM"
+msgstr "OEM"
+
+#: inc/plugins/sophos/Sophos/Region/class-taxonomy.php:259
+msgctxt "taxonomy general name"
+msgid "Regions"
+msgstr "Regioni"
+
+#: inc/plugins/sophos/Sophos/Region/class-taxonomy.php:260
+msgctxt "taxonomy singular name"
+msgid "Region"
+msgstr "Regione"
+
+#: inc/plugins/sophos/Sophos/Region/class-taxonomy.php:261
+msgid "Search Regions"
+msgstr "Cerca regioni"
+
+#: inc/plugins/sophos/Sophos/Region/class-taxonomy.php:262
+#: inc/plugins/sophos/Sophos/UI/table.php:36
+msgid "All Regions"
+msgstr "Tutte le regioni"
+
+#: inc/plugins/sophos/Sophos/Region/class-taxonomy.php:263
+msgid "Parent Region"
+msgstr "Regione principale"
+
+#: inc/plugins/sophos/Sophos/Region/class-taxonomy.php:264
+msgid "Parent Region:"
+msgstr "Regione principale:"
+
+#: inc/plugins/sophos/Sophos/Region/class-taxonomy.php:265
+msgid "Edit Region"
+msgstr "Modifica regione"
+
+#: inc/plugins/sophos/Sophos/Region/class-taxonomy.php:266
+msgid "Update Region"
+msgstr "Aggiorna regione"
+
+#: inc/plugins/sophos/Sophos/Region/class-taxonomy.php:267
+msgid "Add New Region"
+msgstr "Aggiungi una nuova regione"
+
+#: inc/plugins/sophos/Sophos/Region/class-taxonomy.php:268
+msgid "New Region Name"
+msgstr "Nome della nuova regione"
+
+#: inc/plugins/sophos/Sophos/Region/class-taxonomy.php:269
+msgid "Regions"
+msgstr "Regioni"
+
+#: inc/plugins/sophos/Sophos/UI/notices.php:28
+msgid "Please select a region in your profile."
+msgstr "Seleziona una regione nel tuo profilo."
+
+#: inc/plugins/sophos/Sophos/UI/post.php:157
+#: inc/plugins/sophos/Sophos/UI/profile.php:39
+msgid "Region"
+msgstr "Regione"
+
+#: inc/plugins/sophos/Sophos/UI/profile.php:44
+msgid "Select a region"
+msgstr "Seleziona una regione"
+
+#: inc/plugins/sophos/Sophos/UI/profile.php:53
+msgid "Please contact an administrator to change your region."
+msgstr "Contatta un amministratore per cambiare la tua regione."
+
+#: inc/template-tags/archive-title.php:17
+#, php-format
+msgid "Articles Categorized %s"
+msgstr "Articoli suddivisi in categorie %s"
+
+#: inc/template-tags/archive-title.php:20
+#, php-format
+msgid "Articles Tagged %s"
+msgstr "Articoli con tag %s"
+
+#: inc/template-tags/archive-title.php:23
+#, php-format
+msgid "Articles by %s"
+msgstr "Articoli di %s"
+
+#: inc/template-tags/archive-title.php:26
+#: inc/template-tags/archive-title.php:29
+#: inc/template-tags/archive-title.php:32
+#, php-format
+msgid "Articles from %s"
+msgstr "Articoli da %s"
+
+#: inc/template-tags/archive-title.php:26
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: inc/template-tags/archive-title.php:29
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: inc/template-tags/archive-title.php:32
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr "F j, Y"
+
+#: inc/template-tags/archive-title.php:35
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr "Note"
+
+#: inc/template-tags/archive-title.php:37
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr "Gallerie"
+
+#: inc/template-tags/archive-title.php:39
+msgctxt "post format archive title"
+msgid "Images"
+msgstr "Immagini"
+
+#: inc/template-tags/archive-title.php:41
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr "Video"
+
+#: inc/template-tags/archive-title.php:43
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr "Testimonianze"
+
+#: inc/template-tags/archive-title.php:45
+msgctxt "post format archive title"
+msgid "Links"
+msgstr "Link"
+
+#: inc/template-tags/archive-title.php:47
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr "Stati"
+
+#: inc/template-tags/archive-title.php:49
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr "Audio"
+
+#: inc/template-tags/archive-title.php:51
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr "Chat"
+
+#: inc/template-tags/archive-title.php:55
+#, php-format
+msgid "Archives: %s"
+msgstr "Archivi: %s"
+
+#: inc/template-tags/archive-title.php:59
+#, php-format
+msgid "%1$s: %2$s"
+msgstr "%1$s: %2$s"
+
+#: inc/template-tags/archive-title.php:61
+msgid "Archives"
+msgstr "Archivi"
+
+#: inc/template-tags/entry-footer.php:11 inc/template-tags/entry-footer.php:18
+msgid ", "
+msgstr ","
+
+#: inc/template-tags/entry-footer.php:28
+msgid "Leave a comment"
+msgstr "Lascia un commento"
+
+#: inc/template-tags/entry-footer.php:28
+msgid "1 Comment"
+msgstr "1 commento"
+
+#: inc/template-tags/entry-footer.php:28
+msgid "% Comments"
+msgstr "% commenti"
+
+#: inc/template-tags/post-navigation.php:24
+msgid "Post navigation"
+msgstr "Navigazione degli articoli"
+
+#: inc/template-tags/posted-by.php:11
+#, php-format
+msgctxt "post author"
+msgid "By: %s"
+msgstr "Di: %s"
+
+#: inc/template-tags/posts-navigation.php:18
+msgid "Load More"
+msgstr "Mostra di più"
+
+#: inc/template-tags/social-links.php:13
+msgid "Share on Twitter"
+msgstr "Condividi su Twitter"
+
+#: inc/template-tags/social-links.php:15
+msgid "Share on Facebook"
+msgstr "Condividi su Facebook"
+
+#: inc/widgets.php:11
+msgid "Sidebar"
+msgstr "Barra laterale"
+
+#. Theme Name of the plugin/theme
+msgid "Sophos News"
+msgstr "Sophos News"
+
+#. Theme URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://news.sophos.com"
+msgstr "https://news.sophos.com"
+
+#. Description of the plugin/theme
+msgid ""
+"The official theme for news.sophos.com. Built using the Forward Framework."
+msgstr ""
+"Il tema ufficiale di news.sophos.com è stato costruito utilizzando Forward "
+"Framework."
+
+#. Author of the plugin/theme
+msgid "Sophos and Drawbackwards"
+msgstr "Sophos e Drawbackwards"

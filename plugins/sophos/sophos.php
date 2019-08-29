@@ -38,8 +38,8 @@ global $coauthors_plus;
 wpcom_vip_load_plugin( 'co-authors-plus', 'plugins', '3.2' );
 
 // If we're running from the CLI (e.g. unit testing) use a relative path
-define( 'SOPHOS_LIB', ( 'cli' === php_sapi_name() ) ? dirname( __FILE__ ) : get_template_directory() . '/inc/plugins/sophos' );
-define( 'SOPHOS_BIN', get_template_directory() . '/inc/plugins/sophos/bin' );
+define( 'SOPHOS_LIB', dirname( __FILE__ ) );
+define( 'SOPHOS_BIN', dirname( __FILE__ ) . '/bin' );
 
 require_once( SOPHOS_LIB . '/Sophos/Exception/class-invalidlanguagecode.php' );
 require_once( SOPHOS_LIB . '/Sophos/Exception/class-taxonomyerror.php' );

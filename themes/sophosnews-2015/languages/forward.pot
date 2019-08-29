@@ -1,0 +1,483 @@
+# Copyright (C) 2015 Drawbackwards
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Naked Security 1.0.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/support/theme/build\n"
+"POT-Creation-Date: 2015-10-07 00:46:19+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: 404.php:19
+msgid "404"
+msgstr ""
+
+#: 404.php:23
+msgid "Oh no! We couldn&rsquo;t find that page. Maybe try a search?"
+msgstr ""
+
+#: author-bio.php:8
+msgid "Naked Security Expert"
+msgstr ""
+
+#: author-bio.php:15
+msgid "Follow"
+msgstr ""
+
+#: comments.php:27
+msgctxt "comments title"
+msgid "One comment on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s comments on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:46
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:47
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:48
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:56
+msgid "Comments are closed."
+msgstr ""
+
+#: content-card.php:24 content-hero-slide.php:10 content-single.php:22
+msgid "by"
+msgstr ""
+
+#: content-none.php:14
+msgid "NOTHING FOUND"
+msgstr ""
+
+#: content-none.php:20
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: content-none.php:24
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: content-none.php:29
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: content-page.php:22 content-single.php:32 content.php:31
+msgid "Pages:"
+msgstr ""
+
+#: content-page.php:30
+msgid "Edit"
+msgstr ""
+
+#. translators: %s: Name of current post
+#: content.php:23
+msgid "Continue Reading %s"
+msgstr ""
+
+#: footer.php:19 home.php:133
+msgid "SOPHOS"
+msgstr ""
+
+#: footer.php:33
+msgid "Naked Security News"
+msgstr ""
+
+#: footer.php:44
+msgid "Sophos Products"
+msgstr ""
+
+#: footer.php:55
+msgid "Investigate Threats"
+msgstr ""
+
+#: functions.php:162
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:199
+msgid "Footer: Primary"
+msgstr ""
+
+#: functions.php:200
+msgid "Footer: Products"
+msgstr ""
+
+#: functions.php:201
+msgid "Footer: Security News"
+msgstr ""
+
+#: functions.php:202
+msgid "Footer: Threats"
+msgstr ""
+
+#: functions.php:208
+msgid "Search Results Sidebar"
+msgstr ""
+
+#: functions.php:230
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:376
+msgid "%d Articles by %s"
+msgstr ""
+
+#: functions.php:576
+msgid "What Do You Think?"
+msgstr ""
+
+#: functions.php:649
+msgid "<span class=\"uppercase\">%s</span> articles"
+msgstr ""
+
+#: functions.php:652
+msgid ""
+"articles <span class=\"lighten\">tagged</span> <span class=\"uppercase\">%s</"
+"span>"
+msgstr ""
+
+#: functions.php:732
+msgid "Mac Malice"
+msgstr ""
+
+#: functions.php:739
+msgid "Delinquent Web Filtering"
+msgstr ""
+
+#: functions.php:746
+msgid "Faulty Firewall"
+msgstr ""
+
+#: functions.php:753
+msgid "Mobile Negligence"
+msgstr ""
+
+#: functions.php:760
+msgid "Un-Encrypted Email"
+msgstr ""
+
+#: functions.php:767
+msgid "Un-Encrypted Files"
+msgstr ""
+
+#: header.php:23
+msgid "Skip to content"
+msgstr ""
+
+#: home.php:60
+msgid "This Week&rsquo;s Best Advice"
+msgstr ""
+
+#: home.php:65
+msgid "See more security advice"
+msgstr ""
+
+#: home.php:76
+msgid "Video of the Week"
+msgstr ""
+
+#: home.php:89
+msgid "View the video archive"
+msgstr ""
+
+#: home.php:101
+msgid "Popular Stories"
+msgstr ""
+
+#: home.php:129
+msgid "News from Sophos"
+msgstr ""
+
+#: home.php:164
+msgid "Load More Articles"
+msgstr ""
+
+#: inc/custom-post-types.php:9
+msgctxt "Post Type General Name"
+msgid "Advertisements"
+msgstr ""
+
+#: inc/custom-post-types.php:10
+msgctxt "Post Type Singular Name"
+msgid "Advertisement"
+msgstr ""
+
+#: inc/custom-post-types.php:11
+msgid "Ads"
+msgstr ""
+
+#: inc/custom-post-types.php:12
+msgid "Ad"
+msgstr ""
+
+#: inc/custom-post-types.php:13 inc/custom-post-types.php:51
+msgid "Parent Item:"
+msgstr ""
+
+#: inc/custom-post-types.php:14 inc/custom-post-types.php:52
+msgid "All Items"
+msgstr ""
+
+#: inc/custom-post-types.php:15 inc/custom-post-types.php:53
+msgid "Add New Item"
+msgstr ""
+
+#: inc/custom-post-types.php:16 inc/custom-post-types.php:54
+msgid "Add New"
+msgstr ""
+
+#: inc/custom-post-types.php:17 inc/custom-post-types.php:55
+msgid "New Item"
+msgstr ""
+
+#: inc/custom-post-types.php:18 inc/custom-post-types.php:56
+msgid "Edit Item"
+msgstr ""
+
+#: inc/custom-post-types.php:19 inc/custom-post-types.php:57
+msgid "Update Item"
+msgstr ""
+
+#: inc/custom-post-types.php:20 inc/custom-post-types.php:58
+msgid "View Item"
+msgstr ""
+
+#: inc/custom-post-types.php:21 inc/custom-post-types.php:59
+msgid "Search Item"
+msgstr ""
+
+#: inc/custom-post-types.php:22 inc/custom-post-types.php:60
+msgid "Not found"
+msgstr ""
+
+#: inc/custom-post-types.php:23 inc/custom-post-types.php:61
+msgid "Not found in Trash"
+msgstr ""
+
+#: inc/custom-post-types.php:26 inc/field-manager.php:22
+#: inc/field-manager.php:45
+msgid "Advertisement"
+msgstr ""
+
+#: inc/custom-post-types.php:47
+msgctxt "Post Type General Name"
+msgid "Videos"
+msgstr ""
+
+#: inc/custom-post-types.php:48
+msgctxt "Post Type Singular Name"
+msgid "Video"
+msgstr ""
+
+#: inc/custom-post-types.php:49
+msgid "Videos"
+msgstr ""
+
+#: inc/custom-post-types.php:50 inc/custom-post-types.php:64
+msgid "Video"
+msgstr ""
+
+#: inc/customizer-controls.php:22
+msgid "Sophos Theme Options"
+msgstr ""
+
+#: inc/customizer-controls.php:29
+msgid "Disabled"
+msgstr ""
+
+#: inc/customizer-controls.php:36
+msgid "Site Takeover Advert"
+msgstr ""
+
+#: inc/extras.php:37
+msgid "Page %s"
+msgstr ""
+
+#: inc/field-manager.php:16
+msgid "Destination URL"
+msgstr ""
+
+#: inc/field-manager.php:17
+msgid "Banner Image"
+msgstr ""
+
+#: inc/field-manager.php:18
+msgid "Card Image"
+msgstr ""
+
+#: inc/field-manager.php:39
+msgid "YouTube Video URL"
+msgstr ""
+
+#: inc/field-manager.php:40
+msgid "Video Length"
+msgstr ""
+
+#: inc/field-manager.php:41
+msgid "Static Display Image"
+msgstr ""
+
+#: inc/field-manager.php:55
+msgid "Expiration Date"
+msgstr ""
+
+#: inc/field-manager.php:59
+msgid "Breaking News Options"
+msgstr ""
+
+#: inc/short-codes.php:18
+msgid "Inline Advert"
+msgstr ""
+
+#: inc/short-codes.php:20
+msgid "Widgets in this area will be shown as inline adverts."
+msgstr ""
+
+#: inc/template-tags.php:107
+msgid "Show More Articles"
+msgstr ""
+
+#: inc/template-tags.php:119
+msgid "Show More Articles By %s"
+msgstr ""
+
+#: inc/template-tags.php:144
+msgid "Post navigation"
+msgstr ""
+
+#: page-authors.php:38
+msgid "NAKED SECURITY experts"
+msgstr ""
+
+#: page-authors.php:56
+msgid "Show More Experts"
+msgstr ""
+
+#: panel-about.php:2
+msgid "Award-Winning Computer Security News"
+msgstr ""
+
+#: panel-breaking-news.php:25
+msgid "Breaking News"
+msgstr ""
+
+#: panel-breaking-news.php:26
+msgid "Hide"
+msgstr ""
+
+#: panel-recommended.php:2
+msgid "Recommended Reads"
+msgstr ""
+
+#: panel-tools.php:1
+msgid "Free Tools"
+msgstr ""
+
+#: panel-tools.php:5 panel-tools.php:6
+msgid "Antivirus for Mac"
+msgstr ""
+
+#: panel-tools.php:11 panel-tools.php:12
+msgid "Mobile Security for Android"
+msgstr ""
+
+#: panel-tools.php:17 panel-tools.php:18
+msgid "UTM Essential Firewall"
+msgstr ""
+
+#: panel-tools.php:23 panel-tools.php:24
+msgid "UTM Home Edition"
+msgstr ""
+
+#: panel-tools.php:29 panel-tools.php:30
+msgid "Virus Removal Tool"
+msgstr ""
+
+#: panel-tools.php:35 panel-tools.php:36
+msgid "Antivirus for Linux"
+msgstr ""
+
+#: partial-social-links-global.php:3
+msgid "Follow our team of security experts on Twitter"
+msgstr ""
+
+#: partial-social-links-global.php:6
+msgid "Join over 170,000 people in our Facebook community"
+msgstr ""
+
+#: partial-social-links-global.php:9
+msgid "Join our Google+ community"
+msgstr ""
+
+#: partial-social-links-global.php:12
+msgid "Join the Naked Security discussion group on LinkedIn"
+msgstr ""
+
+#: partial-social-links-global.php:15
+msgid "Subscribe to our RSS feed"
+msgstr ""
+
+#: search.php:18
+msgid "RESULTS for \"%s\""
+msgstr ""
+
+#: searchform.php:5
+msgid "Search Naked Security..."
+msgstr ""
+
+#: searchform.php:8
+msgid "Go"
+msgstr ""
+
+#: sidebar-search.php:27
+msgid "RESULTS in \"%s\""
+msgstr ""
+
+#: single.php:34
+msgid "About the Expert"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Naked Security"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://nakedsecurity.sophos.com/"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"The official theme for nakedsecurity.sophos.com. Built on the Forward "
+"Framework."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Drawbackwards"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://drawbackwards.com/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Authors Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width"
+msgstr ""

@@ -1,0 +1,12 @@
+@import url('light-bottom.css');
+
+.cc_container .cc_btn {
+	color: #fff;
+	background-color: #71a865; 
+}
+
+.cc_container .cc_btn:hover, 
+.cc_container .cc_btn:active {
+	color: #fff;
+	background-color: #65975A;
+}

@@ -5,8 +5,8 @@ define( 'SOPHOS_CACHE_BUSTER', 1 );
 /**
  * If we're not a VIP environment, complain.
  */
-wpcom_vip_load_plugin( 'co-authors-plus', 'plugins', '3.2' );
-wpcom_vip_load_plugin( 'fieldmanager', 'plugins', '1.1' );
+wpcom_vip_load_plugin( 'co-authors-plus' );
+wpcom_vip_load_plugin( 'fieldmanager' );
 wpcom_vip_load_plugin( 'wpcom-thumbnail-editor' );
 wpcom_vip_load_plugin( 'add-meta-tags-mod' );
 wpcom_vip_load_plugin( 'msm-sitemap' );

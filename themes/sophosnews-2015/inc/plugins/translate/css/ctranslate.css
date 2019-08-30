@@ -1,0 +1,53 @@
+/* Translations admin screen */
+.widefat .column-iso_code {
+	width: 4em;
+}
+
+.widefat td.column-iso_code {
+	background: url(../flags/empty.png) 6px 4px no-repeat;
+}
+
+.widefat td.column-iso_code img {
+	margin-top: 1px;
+	width:      18px;
+	height:     12px;
+}
+
+.widefat .column-language {
+	width: 8em;
+}
+
+.widefat tr.translation.status-draft td {
+	-moz-opacity: .50; 
+	filter:       alpha(opacity=50);
+	opacity:      .50;
+}
+
+.widefat .column-translator {
+    text-transform: capitalize;
+}
+
+translator column-translator
+/* Post editing screen meta box */
+#cet_translations label {
+	margin-right: 15px;
+	line-height:  1.75em;
+}
+
+#cet_translations label img {
+	vertical-align: middle;
+}
+
+table.translation.languages {
+    width: 100%;
+    max-width: 45em;
+}
+
+table.translation.languages th, table.translation.languages td {
+    text-align: center;
+    width: 25%;
+}
+
+table.translation.languages tr td:first-of-type {
+    text-align: right;
+}

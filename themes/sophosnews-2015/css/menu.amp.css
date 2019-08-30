@@ -1,0 +1,19 @@
+header.site-header.variation .header-container .main-navigation a:after {
+	content: '';
+	border: none;
+	height: auto;
+	width: auto;
+}
+
+header.site-header.variation .header-container.is-open .main-navigation .exit-links.menu li.search-toggle {
+	background-image: url(img/icon-search-close-white.svg);
+}
+
+@media screen and (min-width: 1024px) {
+
+header.site-header.variation .header-container .main-navigation .exit-links li:last-of-type a {
+	border: 1px solid #99cae8;
+}
+
+}
+

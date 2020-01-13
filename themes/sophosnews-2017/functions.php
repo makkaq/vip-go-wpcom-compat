@@ -24,5 +24,5 @@ require get_template_directory() . '/inc/custom-avatar-defaults.php';
 require get_template_directory() . '/inc/field-manager.php';
 require get_template_directory() . '/inc/shortcodes.php';
 
-wpcom_vip_load_plugin( 'fieldmanager', 'plugins', '1.1' );
+wpcom_vip_load_plugin( 'fieldmanager', NULL, '1.1' );
 wpcom_vip_load_plugin( 'msm-sitemap' );

@@ -109,7 +109,7 @@ class Region {
 	 * @return array Array of WP_Term objects
 	 */
 	public static function terms() {
-		return get_option( \Sophos\Region\Taxonomy::OPTION_KEY ) ?: \Sophos\Region\Taxonomy\cache();
+		return \Sophos\Region\Taxonomy\cache();
 	}
 
 

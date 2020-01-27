@@ -11,6 +11,7 @@ Tags: black, blue, gray, white, light, two-columns, left-sidebar, responsive-lay
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
+@import "footer.css";
 @font-face { font-family: SophosSansLight; font-weight: 400; font-style: normal; src: url( fonts/SophosSans-Light.eot ); src: url( fonts/SophosSans-Light.eot?#iefix ) format( "embedded-opentype" ), url( fonts/SophosSans-Light.woff2 ) format( "woff2" ), url( fonts/SophosSans-Light.woff ) format( "woff" ), url( fonts/SophosSans-Light.ttf ) format( "truetype" ), url( fonts/SophosSans-Light.svg#font ) format( "svg" ); }
 @font-face { font-family: SophosSansRegular; font-weight: 400; font-style: normal; src: url( fonts/SophosSans-Regular.eot ); src: url( fonts/SophosSans-Regular.eot?#iefix ) format( "embedded-opentype" ), url( fonts/SophosSans-Regular.woff2 ) format( "woff2" ), url( fonts/SophosSans-Regular.woff ) format( "woff" ), url( fonts/SophosSans-Regular.ttf ) format( "truetype" ), url( fonts/SophosSans-Regular.svg#font ) format( "svg" ); }
 @font-face { font-family: SophosSansMedium; font-weight: 400; font-style: normal; src: url( fonts/SophosSans-Medium.eot ); src: url( fonts/SophosSans-Medium.eot?#iefix ) format( "embedded-opentype" ), url( fonts/SophosSans-Medium.woff2 ) format( "woff2" ), url( fonts/SophosSans-Medium.woff ) format( "woff" ), url( fonts/SophosSans-Medium.ttf ) format( "truetype" ), url( fonts/SophosSans-Medium.svg#font ) format( "svg" ); }
@@ -311,7 +312,7 @@ input[type=submit]:hover { color: #f9f9f9; background-color: #005bb5; }
 .icon-rss { height: 14px; background-image: url( "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='15' height='15' viewBox='0 0 15 15' fill='%23fff'%3E%3Cpath fill-rule='evenodd' d='M3.796 11.412a1.887 1.887 0 0 1 .002 2.647h-.002a1.823 1.823 0 0 1-2.612 0 1.89 1.89 0 0 1 0-2.647 1.825 1.825 0 0 1 2.612 0zM.644 5.282v2.704A6.428 6.428 0 0 1 5.246 9.93a6.663 6.663 0 0 1 1.909 4.692v.004h2.668A9.408 9.408 0 0 0 7.13 8.025C5.467 6.332 3.174 5.285.644 5.282zM.65.47V3.17c6.198.004 11.237 5.14 11.243 11.456h2.662a14.257 14.257 0 0 0-4.08-10.005C7.957 2.056 4.482.471.65.47z'/%3E%3C/svg%3E" ); }
 .social-sharing { margin-bottom: 0; }
 .social-sharing li { display: block; overflow: hidden; white-space: nowrap; text-indent: 101%; position: relative; }
-.social-sharing a { display: block; height: 1.75rem; width: 1.75rem; border-radius: 100%; font-family: SophosSansLight; line-height: 1.75rem; text-align: center; background-repeat: no-repeat; background-position: 50%; background-color: #005bb5; color: #fff; }
+.social-sharing a { display: block; height: 1.75rem; width: 1.75rem; border-radius: 100%; font-family: SophosSansLight; line-height: 1.75rem; text-align: center; background-repeat: no-repeat; background-position: 50%; background-color: #005bb5; color: transparent; }
 .social-sharing a:hover { text-decoration: none; }
 .social-sharing .comments:after { position: absolute; bottom: -1px; left: -1px; transform: rotate( -38deg ); content: ""; display: block; width: 0; height: 0; border-style: solid; border-width: 4px 8px 4px 0; border-color: transparent #005bb5 transparent transparent; }
 .social-sharing .twitter a, .social-sharing a[href*=twitter] { background-image: url( "data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='12' viewBox='0 0 14 12' fill='%23fff'%3E%3Cpath fill-rule='evenodd' d='M14.052 1.838a5.617 5.617 0 0 1-1.641.459 2.903 2.903 0 0 0 1.257-1.61 5.615 5.615 0 0 1-1.818.707 2.825 2.825 0 0 0-2.085-.92c-1.579 0-2.858 1.304-2.858 2.91 0 .227.024.45.073.663-2.376-.122-4.482-1.28-5.894-3.042A2.955 2.955 0 0 0 .698 2.47c0 1.009.506 1.9 1.274 2.42A2.814 2.814 0 0 1 .676 4.53v.035c0 1.41.985 2.585 2.295 2.852a2.765 2.765 0 0 1-1.292.051c.364 1.156 1.42 1.997 2.671 2.02A5.672 5.672 0 0 1 .116 10.69 8.01 8.01 0 0 0 4.498 12c5.26 0 8.136-4.433 8.136-8.28a7.69 7.69 0 0 0-.008-.376 5.805 5.805 0 0 0 1.426-1.506'/%3E%3C/svg%3E" ); }
@@ -824,7 +825,6 @@ article.search-article .entry-categories a { color: #c2c6ca; }
 }
 @media screen and (max-width:768px) {
  body { margin-top: 60px; }
- body.home { margin-bottom: 49px; }
  .container, .content-container, .footer-container, .header-container { padding-right: 1.01125em; padding-left: 1.01125em; }
  .site-header { position: fixed; top: 0; left: 0; z-index: 2; width: 100%; height: 60px; }
  .admin-bar .site-header { top: 46px; }

@@ -151,7 +151,7 @@ class Language {
 
 
 	/**
-	 * The the language code in a Wordpress-friendly format
+	 * Get the language code in a Wordpress-friendly format
 	 *
 	 * Language codes are returned in the format [a-z]{2}(_[A-Z]{2})?, e.g. en or en_US
 	 *
@@ -168,7 +168,7 @@ class Language {
 
 
 	/**
-	 * The the language code in a Wordpress VIP-friendly format
+	 * Get the language code in a Wordpress VIP-friendly format
 	 *
 	 * Language codes are returned in the format [a-z]{2}(_[A-Z]{2})?, e.g. en or en_US
 	 *

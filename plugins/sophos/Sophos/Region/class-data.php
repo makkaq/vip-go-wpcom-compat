@@ -49,19 +49,16 @@ namespace Sophos\Region {
 		/**
 		 * Create a new data object
 		 *
-		 * @param [\Sophos\Language|string] $language \Sophos\Language object or ISO language code
+		 * @param [\Sophos\Language|string] $arg \Sophos\Language object or ISO language code
 		 */
-		public static function instance( $language ) {
-			$arg = ( ! $language instanceof \Sophos\Language )
-				 ? new \Sophos\Language( $language )
-				 : $language;
+		public static function instance( $arg ) {
+			$language = ( ! $arg instanceof \Sophos\Language )
+				      ? new \Sophos\Language( $arg )
+				      : $arg;
 
-			$region = \Sophos\Region::from_language( $arg );
-			$lang   = new \Sophos\Language( $region->slug );
-			$iso    = $lang->format_for_wordpress();
-			$class  = sprintf( '\Sophos\Region\Data\%s', strtoupper( $iso ) );
+			$class  = sprintf( '\Sophos\Region\Data\%s', strtoupper( $language->format_for_wordpress() ) );
 
-			return class_exists( $class ) ? new $class( $lang ) : false;
+			return class_exists( $class ) ? new $class() : false;
 		}
 
 

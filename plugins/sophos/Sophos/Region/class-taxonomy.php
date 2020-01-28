@@ -316,7 +316,7 @@ namespace Sophos\Region\Taxonomy {
 		]);
 
 		if ( is_wp_error( $regions ) ) {
-			trigger_error( $regions->get_error_message() , E_USER_WARNING );
+			throw new \Sophos\Exception\TaxonomyError( $regions->get_error_message() );
 		}
 
 		if ( is_array( $regions ) && count( $regions ) > 0 ) {

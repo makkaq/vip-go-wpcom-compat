@@ -67,7 +67,7 @@ class Region {
 	 * @return \WP_Term
 	 */
 	public static function from_slug( $slug ) {
-		$regions = array_filter( self::terms(), function ( $term ) use ( $slug ) {
+		$regions = array_filter( \Sophos\Region\Taxonomy\cache(), function ( $term ) use ( $slug ) {
 			return $term->slug === $slug;
 		});
 
@@ -86,9 +86,7 @@ class Region {
 	 * @return \WP_Term
 	 */
 	public static function from_id( $id ) {
-
-		$terms = self::terms();
-		$regions = array_filter( self::terms(), function ( $term ) use ( $id ) {
+		$regions = array_filter( \Sophos\Region\Taxonomy\cache(), function ( $term ) use ( $id ) {
 			return $term->term_id === $id;
 		});
 
@@ -106,6 +104,8 @@ class Region {
 	 * The region taxonomy consists of parents that represent regions and children
 	 * that represent target languages for that region. This method returns them all.
 	 *
+	 * @deprecated
+	 *
 	 * @return array Array of WP_Term objects
 	 */
 	public static function terms() {
@@ -119,7 +119,7 @@ class Region {
 	 * @return boolean
 	 */
 	public static function has_terms() {
-		$terms = self::terms();
+		$terms = \Sophos\Region\Taxonomy\cache();
 		return ! empty( $terms );
 	}
 
@@ -133,7 +133,7 @@ class Region {
 	 * @return array Array of WP_Term objects
 	 */
 	public static function regions() {
-		$terms = self::terms();
+		$terms = \Sophos\Region\Taxonomy\cache();
 		return array_filter( $terms, function ( $term ) {
 			return ! ( $term->parent && $term->parent > 0 );
 		});

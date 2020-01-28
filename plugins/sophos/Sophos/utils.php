@@ -135,7 +135,7 @@ function is_language( $iso ) {
 
 	$iso = str_replace( '_', '-', strtolower( trim( $iso ) ) );
 
-	foreach ( \Sophos\Region::terms() as $term ) {
+	foreach ( \Sophos\Region\Taxonomy\cache() as $term ) {
 		if ( $term->slug === $iso ) {
 			return true;
 		}

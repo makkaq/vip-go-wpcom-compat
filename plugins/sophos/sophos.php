@@ -95,8 +95,6 @@ add_action( 'after_setup_theme', function () {
 	if ( ! is_admin() ) {
 		global $wp_locale_switcher;
 
-		trigger_error( sprintf( 'Languages in %s are: %s', WP_LANG_DIR, print_r( get_available_languages(), true ) ), E_USER_WARNING );
-
 		$wp_locale_switcher->switch_to_locale( $locale );
 	}
 

@@ -88,13 +88,13 @@ add_action( 'after_setup_theme', function () {
 	$language = new \Sophos\Language( \Sophos\Region::guess() );
 
 	// Wordpress VIP uses _slightly_ different locales than Wordpress :(
-	$locale   = ( function_exists( 'is_wpcom_vip' ) && is_wpcom_vip() )
+	/*$locale   = ( function_exists( 'is_wpcom_vip' ) && is_wpcom_vip() )
 			  ? $language->format_for_wordpress_vip()
-			  : $language->format_for_wordpress();
+			  : $language->format_for_wordpress();*/
 
 	if ( ! is_admin() ) {
 		global $wp_locale_switcher;
-		$wp_locale_switcher->switch_to_locale( $locale );
+		$wp_locale_switcher->switch_to_locale( $language->format_for_wordpress() );
 	}
 
 	/**

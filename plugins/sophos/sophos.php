@@ -35,7 +35,7 @@
 
 global $coauthors_plus;
 
-wpcom_vip_load_plugin( 'co-authors-plus', 'plugins', '3.2' );
+wpcom_vip_load_plugin( 'co-authors-plus', NULL, '3.2' );
 
 // If we're running from the CLI (e.g. unit testing) use a relative path
 define( 'SOPHOS_LIB', dirname( __FILE__ ) );

@@ -26,3 +26,4 @@ require get_template_directory() . '/inc/shortcodes.php';
 
 wpcom_vip_load_plugin( 'fieldmanager', NULL, '1.1' );
 wpcom_vip_load_plugin( 'msm-sitemap' );
+wpcom_vip_load_plugin( 'syntaxhighlighter' );

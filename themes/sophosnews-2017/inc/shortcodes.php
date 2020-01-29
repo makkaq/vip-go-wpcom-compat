@@ -4,38 +4,36 @@
  * Remove legacy shortcodes
  * http://siteturner.com/dt-shortcodes/
  */
-function sophos_remove_legacy_shortcodes() {
-
+add_action( 'after_setup_theme', function () {
 	$legacy_shortcodes = [
-	'dt_list',
-	'dt_gap',
-	'dt_divider',
-	'dt_tooltip',
-	'dt_quote',
-	'dt_alert',
-	'dt_button',
-	'dt_icon',
-	'dt_highlight',
-	'dt_accordian',
-	'dt_accordian_section',
-	'dt_toggle',
-	'dt_tabgroup',
-	'dt_tab',
-	'dt_one_half',
-	'dt_one_third',
-	'dt_one_fourth',
-	'dt_one_sixth',
-	'dt_progressbar',
-	'dt_pricing_group',
-	'dt_pricing',
+		'dt_list',
+		'dt_gap',
+		'dt_divider',
+		'dt_tooltip',
+		'dt_quote',
+		'dt_alert',
+		'dt_button',
+		'dt_icon',
+		'dt_highlight',
+		'dt_accordian',
+		'dt_accordian_section',
+		'dt_toggle',
+		'dt_tabgroup',
+		'dt_tab',
+		'dt_one_half',
+		'dt_one_third',
+		'dt_one_fourth',
+		'dt_one_sixth',
+		'dt_progressbar',
+		'dt_pricing_group',
+		'dt_pricing',
+		'twitter-follow' // Legacy VIP Twitter shortcode
 	];
 
 	foreach ( $legacy_shortcodes as $shortcode ) {
 		add_shortcode( $shortcode, '__return_false' );
 	}
-
-}
-add_action( 'after_setup_theme', 'sophos_remove_legacy_shortcodes' );
+});
 
 
 /**

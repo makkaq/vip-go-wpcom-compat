@@ -16,7 +16,11 @@ if ( ! function_exists( 'sophos_setup' ) ) :
 		 * If you're building a theme based on Sophos, use a find and replace
 		 * to change 'sophos-news' to the name of your theme in all the template files
 		 */
-		load_theme_textdomain( 'sophos-news', get_template_directory() . '/languages' );
+		$textdomain = load_theme_textdomain( 'sophos-news', get_template_directory() . '/languages' );
+
+		if ( false === $textdomain ) {
+			trigger_error( sprintf( 'Text domain for %s did not load', get_locale() ), E_USER_WARNING );
+		}
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );

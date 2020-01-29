@@ -19,7 +19,13 @@ if ( ! function_exists( 'sophos_setup' ) ) :
 		$textdomain = load_theme_textdomain( 'sophos-news', get_template_directory() . '/languages' );
 
 		if ( false === $textdomain ) {
-			trigger_error( sprintf( 'Text domain for %s did not load', get_locale() ), E_USER_WARNING );
+			$locale   = get_locale();
+			$language = \Sophos\Language::from_default();
+			$default  = $language->format_for_wordpress();
+
+			if ( $locale !== $default ) {
+				trigger_error( "Text domain for $locale did not load. Default locale is $default", E_USER_WARNING );
+			}
 		}
 
 		// Add default posts and comments RSS feed links to head.

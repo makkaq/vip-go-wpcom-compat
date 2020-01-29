@@ -95,6 +95,8 @@ add_action( 'after_setup_theme', function () {
 			  ? $language->format_for_wordpress_vip()
 			  : $language->format_for_wordpress();
 
+trigger_error( "Locale is $locale", E_USER_WARNING );
+
 	if ( ! is_admin() ) {
 		global $wp_locale_switcher;
 

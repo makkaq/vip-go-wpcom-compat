@@ -89,13 +89,9 @@ add_action( 'after_setup_theme', function () {
 	// current locale using get_locale(). If we set a filter on locale before we
 	// run switch then the filtered get_locale() actually prevents the switch!
 	$language = new \Sophos\Language( \Sophos\Region::guess() );
+	$locale   = $language->format_for_wordpress();
 
-	// Wordpress VIP uses _slightly_ different locales than Wordpress :(
-	$locale   = ( function_exists( 'is_wpcom_vip' ) && is_wpcom_vip() )
-			  ? $language->format_for_wordpress_vip()
-			  : $language->format_for_wordpress();
-
-trigger_error( "Locale is $locale", E_USER_WARNING );
+	trigger_error( "Locale is $locale", E_USER_WARNING );
 
 	if ( ! is_admin() ) {
 		global $wp_locale_switcher;

@@ -91,8 +91,6 @@ add_action( 'after_setup_theme', function () {
 	$language = new \Sophos\Language( \Sophos\Region::guess() );
 	$locale   = $language->format_for_wordpress();
 
-	trigger_error( "Locale is $locale", E_USER_WARNING );
-
 	if ( ! is_admin() ) {
 		global $wp_locale_switcher;
 

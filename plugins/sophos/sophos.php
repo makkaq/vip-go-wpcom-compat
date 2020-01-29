@@ -82,6 +82,9 @@ if ( function_exists( '\Sophos\Utils\is_wp_cli' ) && \Sophos\Utils\is_wp_cli() )
  * Switch locale and add a locale filter as early as possible
  */
 add_action( 'after_setup_theme', function () {
+	// Register the region taxonomy before we start switching locales
+	\Sophos\Region\Taxonomy\register();
+
 	// The switch_to_locale() method starts by checking its argument against the
 	// current locale using get_locale(). If we set a filter on locale before we
 	// run switch then the filtered get_locale() actually prevents the switch!
@@ -111,7 +114,6 @@ add_action( 'after_setup_theme', function () {
  * Setup regionalised permalinks
  */
 add_action( 'init', function () {
-	\Sophos\Region\Taxonomy\register();
 
 	global $wp_rewrite;
 

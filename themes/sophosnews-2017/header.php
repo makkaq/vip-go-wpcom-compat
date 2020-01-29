@@ -37,111 +37,26 @@ if ( is_singular() ) :
 			'href' => \Sophos\URL\regionalize( get_permalink( $term->ID ), $term->slug ),
 		]);
 	endforeach;
-else:
+elseif ( is_home() ) :
+
 	global $wp;
 	$url = home_url( add_query_arg( [], $wp->request ) );
 
-	if ( is_home() ) :
-		// Get all languages
-		foreach ( \Sophos\Region::regions() as $term ) :
-			array_push($langs, (object) [
-				'iso'  => $term->slug,
-				'href' => \Sophos\URL\regionalize( $url, $term->slug ),
-			]);
-		endforeach;
-	else :
-		// Get languages where a given category or tag is used
-		$qo  = get_queried_object();
-
-		if ( $qo instanceof \WP_Term ) :
-			foreach ( \Sophos\Region::regions() as $term ) :
-				$query = new WP_Query( [
-					'post_type' => 'post',
-					'tax_query' => [
-						'relation' => 'AND',
-					    [
-							'taxonomy' => $qo->taxonomy,
-							'field'    => 'id',
-							'terms'    => $qo->term_taxonomy_id,
-						],
-						[
-							'taxonomy' => \Sophos\Region\Taxonomy::NAME,
-							'field'    => 'slug',
-							'terms'    => $term->slug,
-						],
-					],
-				]);
-
-				if ( $query->found_posts > 0 ) :
-					array_push($langs, (object) [
-						'iso'  => $term->slug,
-						'href' => \Sophos\URL\regionalize( $url, $term->slug ),
-					]);
-				endif;
-			endforeach;
-		endif;
-	endif;
+	foreach ( \Sophos\Region::regions() as $term ) :
+		array_push($langs, (object) [
+			'iso'  => $term->slug,
+			'href' => \Sophos\URL\regionalize( $url, $term->slug ),
+		]);
+	endforeach;
 endif;
 
 foreach ( $langs as $lang ) :
-	?><link rel="alternate" hreflang="<?php echo esc_attr( $lang->iso ); ?>" href="<?php echo esc_url( $lang->href ); ?>" />
-	<?php
+	?><link rel="alternate" hreflang="<?php echo esc_attr( $lang->iso ); ?>" href="<?php echo esc_url( $lang->href ); ?>" /><?php
 endforeach; ?>
 <?php wp_head(); ?>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-737537-1"></script>
-<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-
-	gtag('js', new Date());
-
-	// Sophos profile
-	gtag('config', 'UA-737537-1', {
-		'linker': {'accept_incoming': true},
-		'cookie_domain': '.sophos.com',
-		'page_path': '/corpblog' + window.location.pathname + window.location.search,
-		'custom_map': {
-			'dimension1': 'CampaignID',
-			'dimension2': 'SessionID'
-		}
-	});
-
-	// Sophos News profile
-	gtag('config', 'UA-737537-53');
-
-	/**
-	 * Add data to local profiles
-	 */
-	jQuery(function () {
-		// Send the campaign ID after we've loaded Sophos code
-		gtag('event', 'cid', {
-			'CampaignID': Sophos.Campaign.getCampaignId(),
-			'SessionID': Sophos.Session.getSessionId()
-		});
-
-		// Local profiles
-		// ==============
-		// The window._sophosLocalAnalytics variable is included in the <body>
-		// element by Wordpress, so we have to delay establishing the trackers
-		// that depend upon it until the document has loaded.
-		if (window._sophosLocalAnalytics && window._sophosLocalAnalytics.substring(0, 3) === 'UA-') {
-			gtag('config', window._sophosLocalAnalytics);
-		}
-	});
-</script>
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5L6H3LN');</script>
-<!-- End Google Tag Manager -->
 </head>
 
 <body <?php body_class(); ?>>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5L6H3LN" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'sophos-news' ); ?></a>
 

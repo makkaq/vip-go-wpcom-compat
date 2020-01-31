@@ -3,7 +3,7 @@
 /**
  * Increment this to manually bust the cache.
  */
-define( 'SOPHOS_CACHE_BUSTER', 2 );
+define( 'SOPHOS_CACHE_BUSTER', 3 );
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -26,6 +26,13 @@ if ( ! function_exists( 'sophos_scripts' ) ) :
 
 			// Front-end scripts
 		if ( ! is_admin() ) {
+            wp_enqueue_script(
+				'sophos-vendor-js-cookie',
+				get_template_directory_uri() . '/js/js-cookie-v2.2.1/js.cookie.js',
+				[ 'jquery' ],
+				SOPHOS_CACHE_BUSTER,
+				true
+			);
 
 			// Load theme-specific JavaScript
 			wp_enqueue_script(
@@ -47,7 +54,7 @@ if ( ! function_exists( 'sophos_scripts' ) ) :
 			wp_enqueue_script(
 				'sophos-js-campaign',
 				get_template_directory_uri() . '/js/sophos.js',
-				[ 'jquery' ],
+				[ 'jquery', 'sophos-vendor-js-cookie' ],
 				SOPHOS_CACHE_BUSTER,
 				true
 			);

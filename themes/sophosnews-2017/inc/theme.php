@@ -27,17 +27,10 @@ if ( ! function_exists( 'sophos_scripts' ) ) :
 			// Front-end scripts
 		if ( ! is_admin() ) {
 
-			  // Load minified scripts if debug mode is off
-			if ( WP_DEBUG === true ) {
-				$suffix = '';
-			} else {
-				$suffix = '.min';
-			}
-
 			// Load theme-specific JavaScript
 			wp_enqueue_script(
 				'sophos-js-core',
-				get_template_directory_uri() . '/js/core' . $suffix . '.js',
+				get_template_directory_uri() . '/js/core.js',
 				[ 'jquery' ],
 				SOPHOS_CACHE_BUSTER,
 				true
@@ -45,7 +38,7 @@ if ( ! function_exists( 'sophos_scripts' ) ) :
 
 			wp_enqueue_script(
 				'sophos-js-extras',
-				get_template_directory_uri() . '/js/extras' . $suffix . '.js',
+				get_template_directory_uri() . '/js/extras.js',
 				[ 'jquery' ],
 				SOPHOS_CACHE_BUSTER,
 				true
@@ -53,7 +46,7 @@ if ( ! function_exists( 'sophos_scripts' ) ) :
 
 			wp_enqueue_script(
 				'sophos-js-campaign',
-				get_template_directory_uri() . '/js/sophos' . $suffix . '.js',
+				get_template_directory_uri() . '/js/sophos.js',
 				[ 'jquery' ],
 				SOPHOS_CACHE_BUSTER,
 				true

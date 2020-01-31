@@ -102,6 +102,13 @@ if ( ! function_exists( 'sophos_setup' ) ) :
 		 * https://vip.wordpress.com/functions/widont/
 		 */
 		remove_filter( 'the_title', 'widont', 10 );
+
+		/**
+		 * Disable automatic link creation
+		 */
+		remove_filter( 'comment_text', 'make_clickable', 9 );
+		remove_filter( 'the_content', 'wpcom_make_content_clickable', 120 );
+		remove_filter( 'the_excerpt', 'wpcom_make_content_clickable', 120 );
 	}
 endif; // sophos_setup
 add_action( 'after_setup_theme', 'sophos_setup' );

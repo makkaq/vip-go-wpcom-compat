@@ -927,6 +927,15 @@ var Sophos = Sophos || {};
 	);
 
 
+    /**
+     * Add data to the news.sophos.com profile
+     */
+    window._gaq.push(
+        ['news._setAccount', 'UA-737537-53'],
+        ['news._trackPageview']
+    );
+
+
 	/**
      * Add data to local profiles
      */

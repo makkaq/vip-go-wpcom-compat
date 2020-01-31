@@ -4,3 +4,6 @@
 [submodule "plugins/polldaddy"]
 	path = plugins/polldaddy
 	url = https://github.com/Automattic/polldaddy-plugin.git
+[submodule "plugins/syntaxhighlighter"]
+	path = plugins/syntaxhighlighter
+	url = git@github.com:Automattic/syntaxhighlighter.git

@@ -56,20 +56,20 @@
 			event.preventDefault();
 		});
 
-		// Toggle Search Bar & Focus
-		$( 'a[href=#search]' ).click(function( event ) {
+        // Toggle Search Bar & Focus
+		$( 'a[href="#search"]' ).click(function( event ) {
 			$( '.site-search-block' ).show().find( '.search-field' ).focus();
 			$( '.news-header-navigation' ).addClass( 'search-active' );
 			event.preventDefault();
 		});
-		$( 'a[href=#search-close]' ).click(function( event ) {
+		$( 'a[href="#search-close"]' ).click(function( event ) {
 			$( '.site-search-block' ).hide();
 			$( '.news-header-navigation' ).removeClass( 'search-active' );
 			event.preventDefault();
 		});
 
 		// Toggle Sophos News Nav
-		$( 'a[href=#newsmenu]' ).click(function(event) {
+		$( 'a[href="#newsmenu"]' ).click(function(event) {
 			$( this ).parent().toggleClass( 'active' );
 			$( '.news-header-navigation' ).toggleClass( 'active' );
 			event.preventDefault();

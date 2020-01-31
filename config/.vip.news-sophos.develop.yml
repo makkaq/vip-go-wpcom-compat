@@ -1,0 +1,7 @@
+# Config file to control domain mapping between live and pre-production environments.
+# See: https://wpvip.com/documentation/vip-go/syncing-data-on-vip-go/#domain-mapping-config
+
+data_sync:
+  domain_map:
+    news.sophos.com: news-sophos-develop.go-vip.net
+    news.sophos.com/nakedsecurity: news-sophos-develop.go-vip.net/nakedsecurity

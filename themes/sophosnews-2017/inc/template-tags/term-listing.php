@@ -18,7 +18,6 @@ if ( ! function_exists( 'sophos_term_listing' ) ) :
             $tax = get_the_terms( false, $taxonomy );
 
             if ( is_wp_error( $tax ) ) {
-                trigger_error( $tax->get_error_message(), E_USER_WARNING );
                 continue;
             }
 
@@ -28,7 +27,7 @@ if ( ! function_exists( 'sophos_term_listing' ) ) :
 
             // Filter tags and categories we don't want to display
             $term_objects = array_filter ( $tax, function ( \WP_Term $term ) {
-                return ! in_array( strtolower( $term->name ), [ 'sidebar', 'uncategorized' ] );
+                return ! in_array( strtolower( $term->name ), [ 'sidebar', 'uncategorized' ], true );
             });
 
             // Remove duplicates by assigning to $terms based on name

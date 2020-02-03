@@ -6,52 +6,48 @@ if ( ! function_exists( 'sophos_term_listing' ) ) :
  * If an identical tag and category exists give preference to the category.
  */
 	function sophos_term_listing( $separator = ' ', $output_list_items = false, $exclude_tags = false ) {
-		$category_terms = get_the_terms( false, 'category' );
-		$tag_terms = get_the_terms( false, 'post_tag' );
 
-		// cast both data sets as arrays
-		$category_terms = json_decode( wp_json_encode( $category_terms ), true );
-		$tag_terms = json_decode( wp_json_encode( $tag_terms ), true );
+        $terms = [];
 
-		$category_names = array_column( $category_terms, 'name' );
-		$terms = [];
-		$output = '';
+        foreach ( [ 'category', 'post_tag' ] as $taxonomy ) {
 
-		if ( ! empty( $category_terms ) ) {
-			foreach ( $category_terms as $cat_term ) {
-				// skip specified categories
-				if ( in_array( $cat_term['slug'], [ 'sidebar', 'uncategorized' ], true ) ) {
-					continue;
-				}
-				$terms[] = $cat_term;
-			}
-		}
+            if ( 'post_tag' === $taxonomy && true === $exclude_tags ) {
+                continue;
+            }
 
-		if ( ! empty( $tag_terms ) && ! $exclude_tags ) {
-			foreach ( $tag_terms as $term ) {
-				if ( in_array( $term['name'], $category_names, true ) ) {
-					continue;
-				}
-				// skip specified tags
-				if ( in_array( $term['slug'], [ 'sidebar' ], true ) ) {
-					continue;
-				}
-				$terms[] = $term;
-			}
-		}
+            $tax = get_the_terms( false, $taxonomy );
 
-		if ( empty( $terms ) ) {
-			return false;
-		}
+            if ( is_wp_error( $tax ) ) {
+                trigger_error( $tax->get_error_message(), E_USER_WARNING );
+                continue;
+            }
 
-		$links = array();
+            if ( false === $tax ) {
+                continue;
+            }
+
+            // Filter tags and categories we don't want to display
+            $term_objects = array_filter ( $tax, function ( \WP_Term $term ) {
+                return ! in_array( strtolower( $term->name ), [ 'sidebar', 'uncategorized' ] );
+            });
+
+            // Remove duplicates by assigning to $terms based on name
+            foreach ( $term_objects as $term ) {
+                $terms[ $term->name ] = $term;
+            }
+        }
+
+        // The keys were for de-duping, we can discard them now
+        $terms  = array_values( $terms );
+		$links  = array();
+        $output = '';
 
 		foreach ( $terms as $term ) {
-			$link = sophos_get_term_link( $term['term_id'] );
+			$link = sophos_get_term_link( $term->term_id );
 			if ( is_wp_error( $link ) ) {
 				return $link;
 			}
-			$links[] = '<a href="' . esc_url( $link ) . '">' . $term['name'] . '</a>';
+			$links[] = '<a href="' . esc_url( $link ) . '">' . $term->name . '</a>';
 		}
 
 		if ( $output_list_items ) {

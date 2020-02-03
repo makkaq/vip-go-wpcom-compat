@@ -23,7 +23,7 @@ namespace Sophos\URL {
      */
     function redirect_legacy_domains () {
 
-        $canonical_host = 'news.sophos.com';
+        $canonical_host = 'news-sophos-develop.go-vip.net';
         $request_uri    = filter_input( INPUT_SERVER, 'REQUEST_URI', FILTER_SANITIZE_URL );
         $http_host      = filter_input( INPUT_SERVER, 'HTTP_HOST', FILTER_CALLBACK, [
             'options' => function ( $domain ) {

@@ -23,7 +23,7 @@ namespace Sophos\URL {
      */
     function redirect_legacy_domains () {
 
-        $canonical_host = 'news.sophos.com';
+        $canonical_host = 'news-sophos-develop.go-vip.net';
         $request_uri    = filter_input( INPUT_SERVER, 'REQUEST_URI', FILTER_SANITIZE_URL );
         $language_root  = filter_input( INPUT_SERVER, 'HTTP_HOST', FILTER_CALLBACK, [
             'options' => function ( $domain ) {
@@ -71,6 +71,8 @@ namespace Sophos\URL {
         if ( '/cache-healthcheck?' === $request_uri ) {
             return false;
         }
+
+        trigger_error( "Request URI is $request_uri", E_USER_ERROR );
 
         // If there's no path, use the language root
         if ( '/' === $request_uri || empty( $request_uri ) ) {

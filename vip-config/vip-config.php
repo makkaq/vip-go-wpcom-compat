@@ -28,6 +28,7 @@ namespace Sophos\URL {
         $http_host      = filter_input( INPUT_SERVER, 'HTTP_HOST', FILTER_CALLBACK, [
             'options' => function ( $domain ) {
                 if ( in_array( $domain, [
+                    'blogs.sophos.com',
                     'sophosbenelux.com',
                     'www.sophosbenelux.com',
                     'sophosbenelux.be',

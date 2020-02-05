@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom">
       <channel>
         <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:61390843/sounds.rss" rel="self" type="application/rss+xml"/>
-        <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:61390843/sounds.rss?before=117039982" rel="next" type="application/rss+xml"/>
+        <atom:link href="http://feeds.soundcloud.com/users/soundcloud:users:61390843/sounds.rss?before=117061323" rel="next" type="application/rss+xml"/>
         <title>Naked Security Podcast</title>
         <link>http://nakedsecurity.sophos.com</link>
-        <pubDate>Wed, 29 Jan 2020 16:19:39 +0000</pubDate>
-        <lastBuildDate>Wed, 29 Jan 2020 16:19:39 +0000</lastBuildDate>
+        <pubDate>Wed, 05 Feb 2020 16:44:14 +0000</pubDate>
+        <lastBuildDate>Wed, 05 Feb 2020 16:44:14 +0000</lastBuildDate>
         <ttl>60</ttl>
         <language>en</language>
-        <copyright>All rights reserved</copyright>
+        <copyright>All rights reserved - 374005</copyright>
         <webMaster>feeds@soundcloud.com (SoundCloud Feeds)</webMaster>
         <description>Podcast by Sophos</description>
         <itunes:subtitle>Podcast by Sophos</itunes:subtitle>
@@ -27,6 +27,40 @@
         </image>
         <itunes:category text="Technology"/>
         <item>
+      <guid isPermaLink="false">tag:soundcloud,2010:tracks/755531386</guid>
+      <title>S2 Ep25: You've seen WHAT on public Trello boards?</title>
+      <pubDate>Wed, 05 Feb 2020 16:43:50 +0000</pubDate>
+      <link>https://soundcloud.com/sophossecurity/s2-ep-25-youve-seen-what-on-public-trello-boards</link>
+      <itunes:duration>00:48:03</itunes:duration>
+      <itunes:author>Sophos</itunes:author>
+      <itunes:explicit>no</itunes:explicit>
+      <itunes:summary>Over the past couple of years, Sophos' Director of Security Craig Jones has discovered a worrying amount of personal data on public Trello boards. Mark says companies shouldn’t microchip their employees and Duck discusses a bug that could have blown a hole in OpenSMTPD.
+
+Host Anna Brading is joined by Sophos experts Paul Ducklin, Mark Stockley and special guest Craig Jones. 
+
+Listen now!
+
+Related articles:
+
+Trello exposed! Search turns up huge trove of private data: https://nakedsecurity.sophos.com/2020/01/30/trello-exposed-search-turns-up-huge-trove-of-private-data/ 
+Employers can’t force you to get microchipped, Indiana reps say https://nakedsecurity.sophos.com/2020/01/30/employers-cant-force-you-to-get-microchipped-indiana-reps-say/   
+Serious Security – How ‘special case’ code blew a hole in OpenSMTPD https://nakedsecurity.sophos.com/2020/01/31/serious-security-how-special-case-code-blew-a-hole-in-opensmtpd/</itunes:summary>
+      <itunes:subtitle>Over the past couple of years, Sophos' Director o…</itunes:subtitle>
+      <description>Over the past couple of years, Sophos' Director of Security Craig Jones has discovered a worrying amount of personal data on public Trello boards. Mark says companies shouldn’t microchip their employees and Duck discusses a bug that could have blown a hole in OpenSMTPD.
+
+Host Anna Brading is joined by Sophos experts Paul Ducklin, Mark Stockley and special guest Craig Jones. 
+
+Listen now!
+
+Related articles:
+
+Trello exposed! Search turns up huge trove of private data: https://nakedsecurity.sophos.com/2020/01/30/trello-exposed-search-turns-up-huge-trove-of-private-data/ 
+Employers can’t force you to get microchipped, Indiana reps say https://nakedsecurity.sophos.com/2020/01/30/employers-cant-force-you-to-get-microchipped-indiana-reps-say/   
+Serious Security – How ‘special case’ code blew a hole in OpenSMTPD https://nakedsecurity.sophos.com/2020/01/31/serious-security-how-special-case-code-blew-a-hole-in-opensmtpd/</description>
+      <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/755531386-sophossecurity-s2-ep-25-youve-seen-what-on-public-trello-boards.mp3" length="69695210"/>
+      <itunes:image href="http://i1.sndcdn.com/artworks-oBalqWR9bxHA1dlJ-8KEA7g-original.png"/>
+      <itunes:keywords>374005</itunes:keywords>
+   </item><item>
       <guid isPermaLink="false">tag:soundcloud,2010:tracks/751586827</guid>
       <title>S2 Ep24: Tinder, angry customers and weleakinfo takedown</title>
       <pubDate>Wed, 29 Jan 2020 16:17:34 +0000</pubDate>
@@ -6024,19 +6058,6 @@ They also share some insights into why Microsoft hasn't simply packed all the im
       <itunes:subtitle>This week Mike Wood, Threat Researcher at SophosL…</itunes:subtitle>
       <description>This week Mike Wood, Threat Researcher at SophosLabs Canada sits down with Chet Wisniewski to talk about ZeusBot Trojan -- its origins, how it works, and why it's such a prevalent threat.</description>
       <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/117061323-sophossecurity-sophos-security-chet-chat-29.mp3" length="7201642"/>
-      <itunes:image href="http://i1.sndcdn.com/avatars-000681640136-r26obb-original.jpg"/>
-    </item><item>
-      <guid isPermaLink="false">tag:soundcloud,2010:tracks/117039982</guid>
-      <title>Sophos Security Chet Chat - Episode 28 - September 28, 2010</title>
-      <pubDate>Fri, 25 Oct 2013 18:16:14 +0000</pubDate>
-      <link>https://soundcloud.com/sophossecurity/sophos-security-chet-chat-28</link>
-      <itunes:duration>00:12:02</itunes:duration>
-      <itunes:author>Sophos</itunes:author>
-      <itunes:explicit>no</itunes:explicit>
-      <itunes:summary>Chet Wisniewski and Paul Ducklin discuss Stuxnet in detail--the origins, controversy and FUD--in this week's Chet-Chat.</itunes:summary>
-      <itunes:subtitle>Chet Wisniewski and Paul Ducklin discuss Stuxnet …</itunes:subtitle>
-      <description>Chet Wisniewski and Paul Ducklin discuss Stuxnet in detail--the origins, controversy and FUD--in this week's Chet-Chat.</description>
-      <enclosure type="audio/mpeg" url="http://feeds.soundcloud.com/stream/117039982-sophossecurity-sophos-security-chet-chat-28.mp3" length="8673898"/>
       <itunes:image href="http://i1.sndcdn.com/avatars-000681640136-r26obb-original.jpg"/>
     </item>
       </channel>

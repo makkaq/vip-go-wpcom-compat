@@ -25,38 +25,45 @@ namespace Sophos\URL {
 
         $canonical_host = 'news.sophos.com';
         $request_uri    = filter_input( INPUT_SERVER, 'REQUEST_URI', FILTER_SANITIZE_URL );
-        $http_host      = filter_input( INPUT_SERVER, 'HTTP_HOST', FILTER_CALLBACK, [
+        $language_root  = filter_input( INPUT_SERVER, 'HTTP_HOST', FILTER_CALLBACK, [
             'options' => function ( $domain ) {
-                if ( in_array( $domain, [
-                    'blogs.sophos.com',
-                    'sophosbenelux.com',
-                    'www.sophosbenelux.com',
-                    'sophosbenelux.be',
-                    'www.sophosbenelux.be',
-                    'blog.sophos.be',
-                    'sophosblog.de',
-                    'www.sophosblog.de',
-                    'blog.sophos.de',
-                    'sophosfranceblog.fr',
-                    'www.sophosfranceblog.fr',
-                    'blog.sophos.fr',
-                    'sophositalia.it',
-                    'www.sophositalia.it',
-                    'sophositalia.com',
-                    'www.sophositalia.com',
-                    'blog.sophos.it',
-                    'sophosiberia.es',
-                    'www.sophosiberia.es'
-                ], true ) ) {
-                    return $domain;
+                $domain_mapping = [
+                    'blogs.sophos.com'        => '/en-us',
+                    'sophosbenelux.com'       => '/nl-nl',
+                    'www.sophosbenelux.com'   => '/nl-nl',
+                    'sophosbenelux.be'        => '/nl-nl',
+                    'www.sophosbenelux.be'    => '/nl-nl',
+                    'blog.sophos.be'          => '/nl-nl',
+                    'sophosblog.de'           => '/de-de',
+                    'www.sophosblog.de'       => '/de-de',
+                    'blog.sophos.de'          => '/de-de',
+                    'sophosfranceblog.fr'     => '/fr-fr',
+                    'www.sophosfranceblog.fr' => '/fr-fr',
+                    'blog.sophos.fr'          => '/fr-fr',
+                    'sophositalia.it'         => '/it-it',
+                    'www.sophositalia.it'     => '/it-it',
+                    'sophositalia.com'        => '/it-it',
+                    'www.sophositalia.com'    => '/it-it',
+                    'blog.sophos.it'          => '/it-it',
+                    'sophosiberia.es'         => '/es-es',
+                    'www.sophosiberia.es'     => '/es-es'
+                ];
+
+                if ( array_key_exists( $domain, $domain_mapping ) ) {
+                    return $domain_mapping[ $domain ];
                 }
 
                 return false;
             }
         ]);
 
+        // Don't redirect in WP CLI context
+        if ( defined( 'WP_CLI' ) && WP_CLI ) {
+            return false;
+        }
+
         // Don't redirect if the host check failed
-        if ( false === $http_host ) {
+        if ( false === $language_root ) {
             return false;
         }
 
@@ -65,9 +72,9 @@ namespace Sophos\URL {
             return false;
         }
 
-        // Don't redirect in WP CLI context
-        if ( ( defined( 'WP_CLI' ) && WP_CLI ) ) {
-            return false;
+        // If there's no path, use the language root
+        if ( '/' === $request_uri || empty( $request_uri ) ) {
+            $request_uri = $language_root;
         }
 
         header( 'Location: https://' . $canonical_host . $request_uri, true, 301 );

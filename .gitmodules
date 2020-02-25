@@ -7,3 +7,6 @@
 [submodule "plugins/syntaxhighlighter"]
 	path = plugins/syntaxhighlighter
 	url = git@github.com:Automattic/syntaxhighlighter.git
+[submodule "plugins/display-posts-shortcode"]
+	path = plugins/display-posts-shortcode
+	url = git@github.com:billerickson/display-posts-shortcode.git

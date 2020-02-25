@@ -41,14 +41,20 @@ var Sophos = Sophos || {};
         var cookie = utils.cast( Cookies.get('SOPHOS_PARTNERID') );
 
 		if (!cookie) {
-			var re = /^[\-a-zA-Z0-9]{1,18}$/;
+			var format = /^[\-a-zA-Z0-9]{1,18}$/;
 
-			if (query.id && re.test(query.id)) {
-				Cookies.set('SOPHOS_PARTNERID', query.id, {
-					domain: window.location.hostname.replace(/^(?:blogs|news|nakedsecurity)\d?(\..+)$/, "$1"),
-					expires: null,
-					path: '/'
-				});
+			if (query.id && format.test(query.id)) {
+
+                var sophos = /^[a-zA-Z0-9\-]+\.(?:sophos\.com|sophos\.test|go-vip\.net)$/;
+                var domain = window.location.hostname.match(sophos);
+
+                if (typeof domain === 'object' && domain.length === 1) {
+                    Cookies.set('SOPHOS_PARTNERID', query.id, {
+    					domain: domain.pop(),
+    					expires: null,
+    					path: '/'
+    				});
+                }
 			}
 		}
 	};

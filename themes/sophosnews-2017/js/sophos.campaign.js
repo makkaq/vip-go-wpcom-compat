@@ -67,12 +67,18 @@ var Sophos = Sophos || {};
 	 * @param {String} str Optional URL or query string containing a campaign ID
 	 */
     _sophos.Campaign.setCookie = function (str) {
-        Cookies.set('CampaignID', _sophos.Campaign.getCampaignId(str), {
-            // set cookie domain based on current tld
-            domain: window.location.hostname.replace(/^(?:blogs|news|nakedsecurity)\d?(\..+)$/, "$1"),
-            expires: 180,
-            path: '/'
-        });
+
+        var sophos = /^[a-zA-Z0-9\-]+\.(?:sophos\.com|sophos\.test|go-vip\.net)$/;
+        var domain = window.location.hostname.match(sophos);
+
+        if (typeof domain === 'object' && domain.length === 1) {
+            Cookies.set('CampaignID', _sophos.Campaign.getCampaignId(str), {
+                // set cookie domain based on current tld
+                domain: domain.pop(),
+                expires: 180,
+                path: '/'
+            });
+        }
     };
 
 })(Sophos, jQuery);

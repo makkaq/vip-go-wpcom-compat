@@ -3,7 +3,7 @@
 /**
  * Increment this to manually bust the cache.
  */
-define( 'SOPHOS_CACHE_BUSTER', 3 );
+define( 'SOPHOS_CACHE_BUSTER', 4 );
 
 /**
  * Set the content width based on the theme's design and stylesheet.
@@ -36,7 +36,7 @@ if ( ! function_exists( 'sophos_scripts' ) ) :
 
 			// Load theme-specific JavaScript
 			wp_enqueue_script(
-				'sophos-js-core',
+                'sophos-js-core',
 				get_template_directory_uri() . '/js/core.js',
 				[ 'jquery' ],
 				SOPHOS_CACHE_BUSTER,
@@ -51,10 +51,42 @@ if ( ! function_exists( 'sophos_scripts' ) ) :
 				true
 			);
 
-			wp_enqueue_script(
+            wp_enqueue_script(
+				'sophos-js-utils',
+				get_template_directory_uri() . '/js/sophos.utils.js',
+				[ 'jquery' ],
+				SOPHOS_CACHE_BUSTER,
+				true
+			);
+
+            wp_enqueue_script(
 				'sophos-js-campaign',
-				get_template_directory_uri() . '/js/sophos.js',
-				[ 'jquery', 'sophos-vendor-js-cookie' ],
+				get_template_directory_uri() . '/js/sophos.campaign.js',
+				[ 'jquery', 'sophos-js-utils', 'sophos-vendor-js-cookie' ],
+				SOPHOS_CACHE_BUSTER,
+				true
+			);
+
+            wp_enqueue_script(
+                'sophos-js-partner',
+                get_template_directory_uri() . '/js/sophos.partner.js',
+                [ 'jquery', 'sophos-js-utils', 'sophos-vendor-js-cookie' ],
+                SOPHOS_CACHE_BUSTER,
+                true
+            );
+
+            wp_enqueue_script(
+                'sophos-js-ga',
+                get_template_directory_uri() . '/js/sophos.ga.js',
+                [ 'jquery', 'sophos-js-utils', 'sophos-vendor-js-cookie' ],
+                SOPHOS_CACHE_BUSTER,
+                true
+            );
+
+			wp_enqueue_script(
+				'sophos-js-news',
+				get_template_directory_uri() . '/js/sophos.news.js',
+				[ 'jquery', 'sophos-js-utils', 'sophos-vendor-js-cookie', 'sophos-js-campaign', 'sophos-js-partner', 'sophos-js-ga' ],
 				SOPHOS_CACHE_BUSTER,
 				true
 			);

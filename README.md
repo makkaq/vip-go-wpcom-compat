@@ -8,7 +8,7 @@ All the directories in this repo are required, and will be available on producti
 
 ## Support
 
-* [Accessing VIP support](https://wpvip.com/documentation/vip-go/accessing-vip-support/).
+* [Accessing VIP support](https://wpvip.com/documentation/vip-go/accessing-vip-support/)
 * [Open a Zendesk ticket](https://wordpressvip.zendesk.com)
 
 ## Development

@@ -181,10 +181,10 @@ function manage_guest_author_sophos_settings() {
 					<?php if ( 'sophos-staff' === $field['key'] ) : ?>
 						<select name="<?php echo esc_attr( $pm_key ); ?>" <?php echo esc_attr( $disabled ); ?>>
 							<?php foreach ( [
-							'0' => 'No',
-							'1' => 'Yes',
-] as $toggle => $name ) :
-								$selected = ( $value === $toggle ) ? 'selected' : ''; ?>
+							    0 => 'No',
+							    1 => 'Yes',
+                            ] as $toggle => $name ) :
+								$selected = ( (int) $value === (int) $toggle ) ? 'selected' : ''; ?>
 								<option value="<?php echo esc_attr( $toggle ); ?>" <?php echo esc_attr( $selected ); ?>><?php echo esc_html( $name ); ?></option>
 							<?php endforeach; ?>
 						</select>

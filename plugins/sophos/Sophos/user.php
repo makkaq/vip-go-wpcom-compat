@@ -44,7 +44,7 @@ function add_role( $role, $name, $capabilities ) {
 	$existing = get_role( $role );
 
 	if ( $existing instanceof \WP_Role ) {
-		$diff = array_diff( $capabilities, $existing->capabilities );
+		$diff = array_diff_assoc( $capabilities, $existing->capabilities );
 
 		if ( empty( $diff ) ) {
 			return null;

@@ -67,11 +67,14 @@ function is_edit_comments_page( $post ) {
 
 	$post   = ( $post instanceof \WP_Post ) ? $post : get_post( (int) $post );
 	$screen = get_current_screen();
-	$types  = \Sophos\Region\Taxonomy::POST_TYPES;
 
-	if ( 'edit-comments' === $screen->base && in_array( $post->post_type, $types, true ) ) {
-		return true;
-	}
+    if ( $screen instanceof \WP_Screen ) {
+        $types  = \Sophos\Region\Taxonomy::POST_TYPES;
+
+        if ( 'edit-comments' === $screen->base && in_array( $post->post_type, $types, true ) ) {
+            return true;
+        }
+    }
 
 	return false;
 }

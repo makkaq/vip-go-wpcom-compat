@@ -35,7 +35,13 @@ add_filter( 'amp_post_template_data', function ( $data ) {
                 "vars" : {
                     "gtag_id": "UA-737537-1",
                     "config" : {
-                        "UA-737537-1": { "groups": "default" }
+                        "UA-737537-1": {
+                            "groups": "default",
+                            "page_location": "/corpblog${canonicalPath}"
+                        },
+                        "UA-737537-25": {
+                            "groups": "default"
+                        }
                     }
                 }
             }

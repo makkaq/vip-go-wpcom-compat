@@ -37,9 +37,9 @@ add_filter( 'amp_post_template_data', function ( $data ) {
                     "config" : {
                         "UA-737537-1": {
                             "groups": "default",
-                            "page_location": "/corpblog${canonicalPath}"
+                            "page_location": "/corpblog${canonicalPath}/amp/"
                         },
-                        "UA-737537-25": {
+                        "UA-737537-53": {
                             "groups": "default"
                         }
                     }

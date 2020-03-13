@@ -6,7 +6,6 @@ define( 'SOPHOS_CACHE_BUSTER', 4 );
 /**
  * If we're not a VIP environment, complain.
  */
-require_once WP_CONTENT_DIR . '/themes/vip/plugins/vip-init.php';
 wpcom_vip_load_plugin( 'co-authors-plus', null, '3.2' );
 wpcom_vip_load_plugin( 'fieldmanager', null, '1.1' );
 wpcom_vip_load_plugin( 'wpcom-thumbnail-editor' );

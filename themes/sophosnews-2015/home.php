@@ -33,9 +33,9 @@ if ( !is_paged() ) : ?>
 	</div>
 <?php sophos_panel_close(); ?>
 
-<div id="newsletter-signup" class="container"></div>
+<?php echo do_shortcode( '[ad]' ); ?>
 
-<?php sophos_panel_open( 'cards-panel zero-bottom' ); ?>
+<?php sophos_panel_open( 'cards-panel' ); ?>
 	<div class="card-collection">
 		<?php // Show the first three posts from the main query.
 		for ( $i = 0; $i < 3; $i ++ ) : the_post();
@@ -44,65 +44,7 @@ if ( !is_paged() ) : ?>
 	</div>
 <?php sophos_panel_close(); ?>
 
-<?php sophos_panel_open( 'advice-video-panel' ); ?>
-	<?php // This Week's Best Advice.
-	$best_advice_of_the_week = new WP_Query( [ 'posts_per_page' => 1, 'tag' => 'best-advice', ] );
-	if ( $best_advice_of_the_week->have_posts() ) : $best_advice_of_the_week->the_post(); ?>
-		<div class="advice-block">
-			<div class="top-row">
-				<h2 class="advice-block-title"><?php esc_html_e( 'This week&rsquo;s best advice', 'forward' ); ?></h2>
-				<div class="advice-image"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php sophos_get_featured_image_as_background( 'this-weeks-best-advice-thumbnail' ); ?></a></div>
-				<h3 class="advice-title"><a href="<?php echo esc_url( get_permalink() ); ?>"><?php the_title(); ?></a></h3>
-			</div>
-			<div class="bottom-row"><?php
-
-				$advice = get_term_link( 'best-advice', 'post_tag' );
-
-				if ( ! is_wp_error( $advice ) ) :
-					?><div class="more-advice"><a href="<?php echo esc_url( $advice ); ?>"><?php esc_html_e( 'See more security advice', 'nakedsecurity' ); ?></a></div><?php
-				endif;
-
-			?></div>
-		</div>
-	<?php endif; wp_reset_postdata(); ?>
-
-	<?php // Video of the Week.
-	if ( !($video_of_the_week = wp_cache_get('sophos_video_of_the_week')) instanceof \WP_Query ) {
-		$video_of_the_week = new WP_Query([
-			'no_found_rows'  => true, // improve performance by avoiding SQL_CALC_FOUND_ROWS
-			'posts_status'   => 'publish',
-			'post_type'      => 'sophos_video',
-			'posts_per_page' => 1,
-			'meta_query'     => [[ 'key' => 'sophos_video_fields' ]]
-		]);
-		wp_cache_set('sophos_video_of_the_week', $video_of_the_week, '', 300);
-	}
-
-	if ( $video_of_the_week->have_posts() ) : $video_of_the_week->the_post();
-		$sophos_video_meta = get_post_meta( get_the_ID(), 'sophos_video_fields' ); ?>
-		<div class="weekly-video-block">
-			<div class="top-row">
-				<h2 class="video-label"><?php esc_html_e( 'Video of the Week', 'forward' ); ?></h2>
-				<div class="video-length"><?php esc_html_e( $sophos_video_meta[0]['video_length'] ); ?></div>
-				<div class="video-image">
-					<a href="<?php echo esc_url( $sophos_video_meta[0]['youtube_video_url'] ); ?>"><?php sophos_get_attachment_image_as_background( $sophos_video_meta[0]['static_display_image'], 'video-of-the-week-thumbnail' ); ?></a>
-				</div>
-			</div>
-			<div class="bottom-row">
-				<h3 class="video-title">
-					<a href="<?php echo esc_url( $sophos_video_meta[0]['youtube_video_url'] ); ?>"><?php the_title(); ?></a>
-				</h3>
-
-				<div class="video-date"><?php esc_html_e( sophos_get_week_range_from_date( get_post_time( 'U', true ) ) ); ?></div>
-				<div class="more-videos"><a href="<?php echo esc_url( get_post_type_archive_link( 'sophos_video' ) ); ?>"><?php esc_html_e( 'View the video archive', 'forward' ); ?></a></div>
-			</div>
-		</div>
-	<?php endif; wp_reset_postdata(); ?>
-<?php sophos_panel_close(); ?>
-
-<?php sophos_panel_open( 'tools-panel' ); ?>
-	<?php get_template_part( 'panel', 'tools' ); ?>
-<?php sophos_panel_close(); ?>
+<div id="newsletter-signup" class="container"></div>
 
 <?php sophos_panel_open( 'stories-panel' ); ?>
 <div class="popular-stories-block">
@@ -147,7 +89,7 @@ if ( !is_paged() ) : ?>
 	<div class="feed-collection">
 		<?php sophos_blog_feed_articles(); ?>
 	</div>
-	<a href="https://news.sophos.com" class="visit-sophos"><?php esc_html_e( 'SOPHOS', 'forward' ); ?></a>
+	<a href="https://news.sophos.com" class="visit-sophos"><svg style="height: 15px" viewBox="0 0 132 24" class="block icon sophos"><use xlink:href="#sophos"></use></svg></a>
 </div>
 <?php sophos_panel_close(); ?>
 
@@ -180,9 +122,5 @@ endif; ?>
 <?php sophos_panel_close(); ?>
 
 <?php sophos_posts_navigation( esc_html__( 'Load more articles', 'forward' ) ); ?>
-
-<?php sophos_panel_open( 'banner-panel' ); ?>
-	<?php sophos_random_advert( 'content-advert', 'banner' ); ?>
-<?php sophos_panel_close(); ?>
 
 <?php get_footer();

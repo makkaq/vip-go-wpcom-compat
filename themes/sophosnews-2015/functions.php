@@ -1,15 +1,26 @@
 <?php
 
-define( 'SOPHOS_CACHE_BUSTER', 1 );
+define( 'SOPHOS_CACHE_BUSTER', 4 );
+
 
 /**
  * If we're not a VIP environment, complain.
  */
-wpcom_vip_load_plugin( 'co-authors-plus' );
-wpcom_vip_load_plugin( 'fieldmanager' );
+require_once WP_CONTENT_DIR . '/themes/vip/plugins/vip-init.php';
+wpcom_vip_load_plugin( 'co-authors-plus', null, '3.2' );
+wpcom_vip_load_plugin( 'fieldmanager', null, '1.1' );
 wpcom_vip_load_plugin( 'wpcom-thumbnail-editor' );
 wpcom_vip_load_plugin( 'add-meta-tags-mod' );
 wpcom_vip_load_plugin( 'msm-sitemap' );
+
+
+/**
+ * Force canonical URLs to use HTTPS
+ */
+if( function_exists('wpcom_vip_enable_https_canonical') ) {
+	wpcom_vip_enable_https_canonical();
+}
+
 
 /**
  * Stop swfobject, stop Flash.
@@ -728,6 +739,7 @@ add_action( 'wp_head', function () {
 	?><link rel="canonical" href="<?php echo esc_url( $canonical ); ?>"><?php
 });
 
+
 /**
  * Force shortlinks to HTTPS
  *
@@ -839,8 +851,8 @@ function sophos_social_links( $show_feed = false, $class = false ) {
 	<ul class="block social share">
 		<li class="facebook"><a href="https://www.facebook.com/share.php?u=<?php echo urlencode( get_permalink() ); ?>&title=<?php echo urlencode( $title ); ?>" data-title="<?php esc_attr_e( $title ); ?>" title="Share on Facebook"><svg style="height: 20px;" viewBox="0 0 100 100" class="icon facebook"><use xlink:href="#facebook"></use></svg></a></li>
 		<li class="twitter"><a href="https://twitter.com/intent/tweet?text=<?php echo urlencode( str_replace( "\xc2\xa0", "\x20", html_entity_decode( get_the_title(), ENT_HTML5 ) ) ); ?>+<?php echo urlencode( wp_get_shortlink() ); ?>" data-title="<?php esc_attr_e( get_the_title() ); ?>" title="Share on Twitter"><svg style="height: 20px;" viewBox="0 0 100 100" class="icon twitter"><use xlink:href="#twitter"></use></svg></a></li>
-		<li class="linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode( wp_get_shortlink() ); ?>&title=<?php echo urlencode( $title ); ?>" data-title="<?php esc_attr_e( $title ); ?>" title="Share on LinkedIn"><svg style="height: 20px;"  viewBox="0 0 100 100" class="icon linkedin"><use xlink:href="#linkedin"></use></svg></a></li>
-		<li class="reddit"><a href="https://reddit.com/submit/?url=<?php echo urlencode( wp_get_shortlink() ); ?>&title=<?php echo urlencode( $title ); ?>" title="Share on Reddit"><svg style="height: 20px;"  viewBox="0 0 100 100" class="icon reddit"><use xlink:href="#reddit"></use></svg></a></li>
+		<li class="linkedin"><a href="https://www.linkedin.com/shareArticle?mini=true&url=<?php echo urlencode( get_permalink() ); ?>&title=<?php echo urlencode( $title ); ?>" data-title="<?php esc_attr_e( $title ); ?>" title="Share on LinkedIn"><svg style="height: 20px;"  viewBox="0 0 100 100" class="icon linkedin"><use xlink:href="#linkedin"></use></svg></a></li>
+		<li class="reddit"><a href="https://reddit.com/submit/?url=<?php echo urlencode( get_permalink() ); ?>&title=<?php echo urlencode( $title ); ?>" title="Share on Reddit"><svg style="height: 20px;"  viewBox="0 0 100 100" class="icon reddit"><use xlink:href="#reddit"></use></svg></a></li>
 
 		<?php if ( $show_feed ) : ?>
 			<li class="rss"><a href="<?php echo esc_url( get_bloginfo( 'rss_url' ) ); ?>"><svg style="height: 20px;" viewBox="0 0 100 100" class="icon rss"><use xlink:href="#rss"></use></svg></a></li>

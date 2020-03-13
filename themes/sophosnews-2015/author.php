@@ -46,10 +46,6 @@ get_header(); ?>
 
 	<?php sophos_posts_navigation(); ?>
 
-	<?php sophos_panel_open( 'newsletter-panel' ); ?>
-		<?php get_template_part( 'panel', 'newsletter' ); ?>
-	<?php sophos_panel_close(); ?>
-
 	<?php get_template_part( 'panel', 'recommended' ); ?>
 
 <?php get_footer();

@@ -175,11 +175,11 @@ function sophos_posts_navigation( $label = null ) {
 	}
 
 	?>
-	<div class="load-more">
+	<section class="load-more">
 		<div class="container">
 			<?php next_posts_link( $label ); ?>
 		</div>
-	</div>
+	</section>
 	<?php
 }
 

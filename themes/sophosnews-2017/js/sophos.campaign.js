@@ -71,7 +71,7 @@ var Sophos = Sophos || {};
         var sophos = /^[a-zA-Z0-9\-]+\.(sophos\.com|sophos\.test|go-vip\.net)$/;
         var domain = window.location.hostname.match(sophos).pop();
 
-        if (typeof domain === 'object' && domain.length === 1) {
+        if (typeof domain === 'string' && domain.length > 0) {
             Cookies.set('CampaignID', _sophos.Campaign.getCampaignId(str), {
                 // set cookie domain based on current tld
                 domain: domain,

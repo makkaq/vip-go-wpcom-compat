@@ -90,11 +90,7 @@ function get_capabilities( $role ) {
  * @return string|bool
  */
 function get_attribute_or_meta( $user_id, $meta_key ) {
-	$function = ( function_exists( 'get_user_attribute' ) )
-			  ? 'get_user_attribute'
-			  : 'get_user_meta';
-
-	return $function( $user_id, $meta_key, true );
+	return get_user_meta( $user_id, $meta_key, true );
 }
 
 

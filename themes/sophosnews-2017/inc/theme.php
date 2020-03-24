@@ -260,26 +260,23 @@ add_filter( 'comment_form_defaults', function ( $fields ) {
  * Add Open Graph tags
  */
 function sophos_opengraph() {
-	if ( function_exists( 'wpcom_vip_enable_opengraph' ) ) {
-		wpcom_vip_enable_opengraph();
+    add_filter( 'jetpack_enable_open_graph', '__return_true', 100 );
+	add_filter('jetpack_open_graph_tags', function ( $tags ) {
 
-		add_filter('jetpack_open_graph_tags', function ( $tags ) {
+		if ( ! array_key_exists( 'fb:admins', $tags ) ) {
+			$tags['fb:admins'] = 28552295016;
+		}
 
-			if ( ! array_key_exists( 'fb:admins', $tags ) ) {
-				$tags['fb:admins'] = 28552295016;
+		if ( has_post_thumbnail( get_the_ID() ) ) {
+			$src = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'opengraph' ) ?: array();
+			$tags['og:image'] = array_shift( $src );
+
+			if ( substr( $tags['og:image'], 0, strlen( 'https://' ) ) === 'https://' ) {
+				$tags['og:image:secure_url'] = $tags['og:image'];
 			}
+		}
 
-			if ( has_post_thumbnail( get_the_ID() ) ) {
-				$src = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'opengraph' ) ?: array();
-				$tags['og:image'] = array_shift( $src );
-
-				if ( substr( $tags['og:image'], 0, strlen( 'https://' ) ) === 'https://' ) {
-					$tags['og:image:secure_url'] = $tags['og:image'];
-				}
-			}
-
-			return $tags;
-		});
-	}
+		return $tags;
+	});
 }
 add_action( 'after_setup_theme', 'sophos_opengraph' );

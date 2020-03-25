@@ -24,14 +24,17 @@ if ( function_exists( 'get_coauthors' ) ) :
 
 	$coauthors = get_coauthors();
 	$coauthor  = array_shift( $coauthors );
-	$guest	   = $coauthors_plus->guest_authors->get_guest_author_by( 'id', $coauthor->ID, true );
 
-	if ( false !== $guest ) {
-		$avatar = coauthors_get_avatar( $coauthor, $size );
-		$link   = coauthors_posts_links_single( $coauthor );
-		$bio	= $guest->description;
-		$name	= $guest->display_name;
-	}
+    if ( is_object( $coauthor ) ) {
+        $guest	   = $coauthors_plus->guest_authors->get_guest_author_by( 'id', $coauthor->ID, true );
+
+    	if ( false !== $guest ) {
+    		$avatar = coauthors_get_avatar( $coauthor, $size );
+    		$link   = coauthors_posts_links_single( $coauthor );
+    		$bio	= $guest->description;
+    		$name	= $guest->display_name;
+    	}
+    }
 
 endif;
 
@@ -66,6 +69,11 @@ $name	= $name	  ?: get_the_author_meta( 'display_name' );
 				],
 			]); ?></h3>
 		<?php endif; ?>
-		<p class="author-bio"><?php echo esc_html( $bio ); ?></p>
+		<div class="author-bio"><?php echo wp_kses( wpautop( $bio ), [
+			'p' => [],
+			'a' => [
+				'href' => []
+			]
+		]); ?></div>
 	</div> <!-- .author-description -->
 </div>

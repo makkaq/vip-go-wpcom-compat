@@ -1,20 +1,6 @@
-# VIP Go Skeleton
+# Sophos on Wordpress VIP Go
 
-Welcome to VIP! This repo is a starting point for building your VIP Go site, including all the base folders to be built on.
-
-## Guidebooks
-
-We'd recommend starting with one of the following guidebooks. They include everything you need to know about launching and developing with VIP:
-
-* [Launching with VIP](https://wpvip.com/documentation/launching-with-vip/)
-* [Developing with VIP](https://wpvip.com/documentation/developing-with-vip/)
-
-## Quick links to relevant documentation
-
-To dig straight into our documentation and get up and running, try:
-
-* [Understanding your VIP Go codebase](https://wpvip.com/documentation/vip-go/understanding-your-vip-go-codebase/)
-* [VIP Go local development](https://wpvip.com/documentation/vip-go/local-vip-go-development-environment/)
+This repository contains the code for the Wordpress VIP Go multisite used to host the Naked Security and Sophos News websites.
 
 ## Usage
 
@@ -22,12 +8,20 @@ All the directories in this repo are required, and will be available on producti
 
 ## Support
 
-If you need help with anything, VIP's support team is [just a ticket away](https://wpvip.com/documentation/vip-go/accessing-vip-support/).
+* [Accessing VIP support](https://wpvip.com/documentation/vip-go/accessing-vip-support/)
+* [Open a Zendesk ticket](https://wordpressvip.zendesk.com)
 
-## Your content here
- 
-Feel free to add to or replace this README.md content with content unique to your project, for example:
- 
-* Project-specific notes; like a list of VIP environments and branches,
-* Workflow documentation; so everyone working in this repo can follow a defined process, or
-* Instructions for testing new features.
+## Development
+
+* [Developing with VIP](https://wpvip.com/documentation/developing-with-vip/welcome-to-vip-development/)
+* [Understanding your VIP Go codebase](https://wpvip.com/documentation/vip-go/understanding-your-vip-go-codebase/)
+* [VIP Go local development](https://wpvip.com/documentation/vip-go/local-vip-go-development-environment/)
+* [Wordpress VIP coding standards](https://github.com/Automattic/VIP-Coding-Standards)
+* [GitHub repository](https://github.com/wpcomvip/sophos-news)
+* [Sophos News staging site](https://news-sophos-develop.go-vip.net)
+
+## Administration
+
+* [Wordpress VIP dashboard](https://dashboard.wpvip.com/apps/1840)
+* [New Relic application monitoring](https://login.newrelic.com/login)
+* [Vaultpress backups](https://vaultpress.com/)

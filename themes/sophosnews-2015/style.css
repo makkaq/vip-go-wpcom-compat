@@ -12,6 +12,9 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
+@import url( 'css/ad.xg-firewall.amp.css');
+@import url( 'css/podcast.css');
+
 header.site-header {
 	overflow: hidden;
 	background: #055bb5;
@@ -225,102 +228,125 @@ header.site-header.variation .header-container.is-open .main-navigation .exit-li
 	background-image: url(img/icon-search-close-white.svg);
 }
 
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper {
-	text-decoration: none;
+.s-button + .s-button {
+	margin-left: .3125rem;
 }
 
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper:hover .s-ad-phish-threat {
-	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
-}
-
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat {
-	font-family: SophosSansRegular, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 1rem;
-	font-weight: normal;
-	font-style: normal;
+.s-button {
+	transition: all .15s linear;
+	font-size: .875rem;
 	line-height: 1.5;
+	color: #f2f2f2;
+	font-family: SophosSansMedium, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	display: inline-block;
+	padding: .3125rem 1.25rem;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	border: 1px solid #007ac6;
+	border-radius: 3px;
+	background-color: #007ac6;
+	text-shadow: none;
+}
+
+.s-button:hover {
+	text-decoration: none;
+	color: #fff;
+	border-color: #003b60;
+	background-color: #003b60;
+}
+
+.s-button--wide {
+	padding-right: 2.5rem;
+	padding-left: 2.5rem;
+}
+
+.s-button--small {
+	font-size: .75rem;
+}
+
+.s-button--orange {
+	color: #000;
+	border-color: #f38332;
+	background-color: #f38332;
+}
+
+.s-button--orange:hover {
+	color: #fff;
+	border-color: #e5680d;
+	background-color: #e5680d;
+}
+
+.s-ad-intercept-x-v2 {
+	font-size: 1rem;
+	line-height: 1.5;
+	color: #242629;
+	font-family: SophosSansRegular, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
 	position: relative;
 	max-width: 769px;
-	margin-top: 15px;
-	margin-right: auto;
-	margin-bottom: 15px;
-	margin-left: auto;
-	padding-top: 30px;
-	padding-top: 25px;
-	padding-right: 30px;
-	padding-bottom: 25px;
-	padding-left: 30px;
+	margin: 15px auto;
+	padding: 40px 30px 35px;
 	transition: box-shadow 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 	text-align: center;
-	color: #242629;
-	background-color: #0d141d;
-	background-color: #173b77;
-	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzc3IiBoZWlnaHQ9IjE0OCIgdmlld0JveD0iMCAwIDc3NyAxNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjx0aXRsZT4gcGhpc2gtdGhyZWF0LWJnIDwvdGl0bGU+PGRlZnM+PHBhdGggaWQ9ImEiIGQ9Ik0wIC43M2g3Nzd2MTQ3SDB6Ii8+PHJhZGlhbEdyYWRpZW50IGN4PSItMTUuMDA0JSIgY3k9IjUwLjA4NyUiIGZ4PSItMTUuMDA0JSIgZnk9IjUwLjA4NyUiIHI9IjUzJSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCguOTk1MTQgLjA5NjU4IC0uMDk4NDUgLjk3NjIyIC4wNDkgLjAyNikiIGlkPSJjIj48c3RvcCBzdG9wLWNvbG9yPSIjNzc3QTdDIiBvZmZzZXQ9IjY0JSIvPjxzdG9wIHN0b3AtY29sb3I9IiM3QzdGODEiIG9mZnNldD0iNjUlIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0ExQTNBNCIgb2Zmc2V0PSI3MCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjQkJCREJEIiBvZmZzZXQ9Ijc2JSIvPjxzdG9wIHN0b3AtY29sb3I9IiNDQkNEQ0QiIG9mZnNldD0iODAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0QxRDJEMiIgb2Zmc2V0PSI4NCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRDFEMkQyIiBvZmZzZXQ9IjEwMCUiLz48L3JhZGlhbEdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBjeD0iLTk1MDQwLjAwNyUiIGN5PSIzMDgwLjcxMyUiIGZ4PSItOTUwNDAuMDA3JSIgZnk9IjMwODAuNzEzJSIgcj0iNzMlIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDEgMCAwIC43MjE5MyAwIDguNTY2KSIgaWQ9ImQiPjxzdG9wIHN0b3AtY29sb3I9IiM3NzdBN0MiIG9mZnNldD0iNjQlIi8+PHN0b3Agc3RvcC1jb2xvcj0iIzdDN0Y4MSIgb2Zmc2V0PSI2NSUiLz48c3RvcCBzdG9wLWNvbG9yPSIjQTFBM0E0IiBvZmZzZXQ9IjcwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiNCQkJEQkQiIG9mZnNldD0iNzYlIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0NCQ0RDRCIgb2Zmc2V0PSI4MCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjRDFEMkQyIiBvZmZzZXQ9Ijg0JSIvPjxzdG9wIHN0b3AtY29sb3I9IiNEMUQyRDIiIG9mZnNldD0iMTAwJSIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGN4PSItMTU2MzcuOTQ5JSIgY3k9IjM2NC43NDUlIiBmeD0iLTE1NjM3Ljk0OSUiIGZ5PSIzNjQuNzQ1JSIgcj0iMTIzLjcyOCUiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgLjQ2MDQ3IDAgMS45NjgpIiBpZD0iZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzc3N0E3QyIgb2Zmc2V0PSI2NCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjN0M3RjgxIiBvZmZzZXQ9IjY1JSIvPjxzdG9wIHN0b3AtY29sb3I9IiNBMUEzQTQiIG9mZnNldD0iNzAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0JCQkRCRCIgb2Zmc2V0PSI3NiUiLz48c3RvcCBzdG9wLWNvbG9yPSIjQ0JDRENEIiBvZmZzZXQ9IjgwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiNEMUQyRDIiIG9mZnNldD0iODQlIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0QxRDJEMiIgb2Zmc2V0PSIxMDAlIi8+PC9yYWRpYWxHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgY3g9Ii0zMTcxNS45ODUlIiBjeT0iMjIyLjI0OSUiIGZ4PSItMzE3MTUuOTg1JSIgZnk9IjIyMi4yNDklIiByPSIzNjIuNTIyJSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgxIDAgMCAuMTIyMyAwIDEuOTUpIiBpZD0iZiI+PHN0b3Agc3RvcC1jb2xvcj0iIzc3N0E3QyIgb2Zmc2V0PSI2NCUiLz48c3RvcCBzdG9wLWNvbG9yPSIjN0M3RjgxIiBvZmZzZXQ9IjY1JSIvPjxzdG9wIHN0b3AtY29sb3I9IiNBMUEzQTQiIG9mZnNldD0iNzAlIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0JCQkRCRCIgb2Zmc2V0PSI3NiUiLz48c3RvcCBzdG9wLWNvbG9yPSIjQ0JDRENEIiBvZmZzZXQ9IjgwJSIvPjxzdG9wIHN0b3AtY29sb3I9IiNEMUQyRDIiIG9mZnNldD0iODQlIi8+PHN0b3Agc3RvcC1jb2xvcj0iI0QxRDJEMiIgb2Zmc2V0PSIxMDAlIi8+PC9yYWRpYWxHcmFkaWVudD48L2RlZnM+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJldmVub2RkIj48bWFzayBpZD0iYiIgZmlsbD0iI2ZmZiI+PHVzZSB4bGluazpocmVmPSIjYSIvPjwvbWFzaz48dXNlIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIgeGxpbms6aHJlZj0iI2EiLz48ZyBtYXNrPSJ1cmwoI2IpIj48cGF0aCBmaWxsPSIjMDIzRDdBIiBmaWxsLXJ1bGU9Im5vbnplcm8iIGQ9Ik0wIC43M2g3Nzd2MTQ3SDB6Ii8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ5IC04OCkiIG9wYWNpdHk9Ii4zNSI+PHBhdGggZD0iTTIxNS4wOSAzNjEuNTVjLTgyLjAyMSAwLTE0OC41MTQtNjYuNDg5LTE0OC41Mi0xNDguNTEtLjAwNi04Mi4wMjEgNjYuNDc5LTE0OC41MTkgMTQ4LjUtMTQ4LjUzIDgyLjAyMS0uMDExIDE0OC41MjMgNjYuNDY5IDE0OC41NCAxNDguNDlhMTQ4LjUyIDE0OC41MiAwIDAgMS0xNDguNTIgMTQ4LjU1em0uMjYtMjUuOGM0OS41MjcuMDA0IDk0LjE4LTI5LjgyNyAxMTMuMTM2LTc1LjU4MyAxOC45NTYtNDUuNzU3IDguNDgyLTk4LjQyNi0yNi41MzctMTMzLjQ0OS0zNS4wMi0zNS4wMjItODcuNjg5LTQ1LjUtMTMzLjQ0Ni0yNi41NDgtNDUuNzU4IDE4Ljk1Mi03NS41OTMgNjMuNjAzLTc1LjU5MyAxMTMuMTMgMCA2Ny42MjMgNTQuODE3IDEyMi40NDQgMTIyLjQ0IDEyMi40NXoiIGZpbGw9IiMwMEFEQzkiIGZpbGwtcnVsZT0ibm9uemVybyIgb3BhY2l0eT0iLjMiLz48cGF0aCBkPSJNMjE1LjM1IDM4OC40MWMtNzAuODMgMC0xMzQuNjg2LTQyLjY2OC0xNjEuNzktMTA4LjEwNy0yNy4xMDUtNjUuNDM5LTEyLjEyMS0xNDAuNzYyIDM3Ljk2NS0xOTAuODQ1IDUwLjA4Ni01MC4wODMgMTI1LjQxLTY1LjA2MyAxOTAuODQ3LTM3Ljk1NUMzNDcuODEgNzguNjExIDM5MC40NzQgMTQyLjQ3IDM5MC40NyAyMTMuM2ExNzUuMTEgMTc1LjExIDAgMCAxLTE3NS4xMiAxNzUuMTF6bS4zMS0zMC40M2M1OC4zOTguMDA0IDExMS4wNDgtMzUuMTcyIDEzMy4zOTgtODkuMTI0IDIyLjM1LTUzLjk1MiA5Ljk5OC0xMTYuMDU0LTMxLjI5Ni0xNTcuMzQ4LTQxLjI5NC00MS4yOTQtMTAzLjM5Ni01My42NDYtMTU3LjM0OC0zMS4yOTYtNTMuOTUyIDIyLjM1LTg5LjEyOCA3NS04OS4xMjQgMTMzLjM5OEExNDQuMzcgMTQ0LjM3IDAgMCAwIDIxNS42NiAzNTh2LS4wMnoiIGZpbGw9IiM2RUI0RTciIGZpbGwtcnVsZT0ibm9uemVybyIgb3BhY2l0eT0iLjUiLz48cGF0aCBkPSJNMjE1LjM1IDQwNi4zMWMxMDUuNDM3IDAgMTkwLjkxLTg1LjQ3MyAxOTAuOTEtMTkwLjkxUzMyMC43ODcgMjQuNDkgMjE1LjM1IDI0LjQ5IDI0LjQ0IDEwOS45NjMgMjQuNDQgMjE1LjRzODUuNDczIDE5MC45MSAxOTAuOTEgMTkwLjkxeiIgc3Ryb2tlPSIjRjVBNjIzIiBzdHJva2Utd2lkdGg9IjIuNjMiIG9wYWNpdHk9Ii4zIiBzdHJva2UtZGFzaGFycmF5PSIzLjI4Ii8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAxMTIpIiBmaWxsPSIjQjVDRkVBIiBmaWxsLXJ1bGU9Im5vbnplcm8iPjxjaXJjbGUgb3BhY2l0eT0iLjMiIGN4PSIxMy45MSIgY3k9IjE4LjM1IiByPSIyLjExIi8+PGNpcmNsZSBjeD0iMjQuNDQiIGN5PSIzNC4xNSIgcj0iMi4xMSIvPjxjaXJjbGUgY3g9IjQxOC4zOCIgY3k9IjM0LjE1IiByPSIyLjExIi8+PGNpcmNsZSBjeD0iNDEzLjEyIiBjeT0iMzkuNDEiIHI9IjIuMTEiLz48Y2lyY2xlIG9wYWNpdHk9Ii4zIiBjeD0iMzgzLjM2IiBjeT0iNDYuNTIiIHI9IjMuOTUiLz48Y2lyY2xlIG9wYWNpdHk9Ii4zIiBjeD0iNDEwLjIyIiBjeT0iNC4zOSIgcj0iMy45NSIvPjxjaXJjbGUgb3BhY2l0eT0iLjMiIGN4PSI0MS41NiIgY3k9IjI1LjQ2IiByPSIzLjk1Ii8+PGNpcmNsZSBvcGFjaXR5PSIuMyIgY3g9IjMxLjAyIiBjeT0iMTA0LjQ2IiByPSIzLjk1Ii8+PGNpcmNsZSBvcGFjaXR5PSIuMyIgY3g9IjUyLjA5IiBjeT0iMTIwLjI2IiByPSIzLjk1Ii8+PGNpcmNsZSBjeD0iMzk3LjMyIiBjeT0iOTIuMDgiIHI9IjIuMTEiLz48Y2lyY2xlIG9wYWNpdHk9Ii40IiBjeD0iNDE4LjM4IiBjeT0iMTE4LjQxIiByPSIyLjExIi8+PGNpcmNsZSBjeD0iMi44NSIgY3k9IjU1Ljc0IiByPSIyLjExIi8+PGNpcmNsZSBvcGFjaXR5PSIuNiIgY3g9IjQuOTUiIGN5PSI1Ny44NSIgcj0iMi4xMSIvPjxjaXJjbGUgY3g9IjM0LjQ1IiBjeT0iNzYuODEiIHI9IjIuMTEiLz48Y2lyY2xlIG9wYWNpdHk9Ii41IiBjeD0iMTMuOTEiIGN5PSIxMDMuMTQiIHI9IjIuMTEiLz48L2c+PHBhdGggZD0iTTM4Ni4xNSAxMjYuODJWLjI3IiBzdHJva2U9IiNFMkU1RTciIHN0cm9rZS13aWR0aD0iLjU1IiBvcGFjaXR5PSIuNSIgc3Ryb2tlLWxpbmVjYXA9InNxdWFyZSIvPjxpbWFnZSB4PSIzODUiIHk9IjEyOC45OSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjI1IiB4bGluazpocmVmPSJkYXRhOmltYWdlL3BuZztiYXNlNjQsaVZCT1J3MEtHZ29BQUFBTlNVaEVVZ0FBQUF3QUFBQVpDQVlBQUFBRmJzL1BBQUFBQVhOU1IwSUFyczRjNlFBQUFZQkpSRUZVT0JHVlZFMUxBbEVVdmU4NXpWVGpvSWhKa0lacm9XWVRKUGdMYXROS3lscjBLOXJVVDRrSS9DandJNG9JS25lMjhDZTRTak5qc29SQUttZlFjVjdQTnlsRTFMeTVNTU53dVlkNzdybjNESFM3WFpMSkZ3Z040SGx3djk4SGowY0Ezc0M2YmtCUDcvSFdBOWJhejRBUTVnZmMxeHVBTU9JSE5CNmF0SU1MZ0tacGdOMEEyaTl0ZHpNb2l1S09rcXFxN2lqTkJZUGNIWkxiT3dTUHpvRW45dllQaUdWWkl6YUlibHAzeENUaWNXQ0FVU1hHenB1ZWxpUVFSUWxZSlEvQW90UVZ4UXVZbmpkNE9EcThmWHd5Y2JBNUhISlJrc1VwOFB2OGdDdVZDdlFNNTZIZkRjTVdwdFY2SWtlNVUwZkhuVjFlRVhwM1JBaUhGNUJ2ZHViZlpXUUtSU0pRVjlhYmo3WktyNTBPcFBQRlAwR21hVUxBSzBNaXZtcGJiU2tXWTRPZmxNNS9nUTZ6T1phN3ExYlpER2g4R3NmcERKRmtCUWJtQUhZM2s4eFI0K0pRSUFBYjYyc3NOL2xkUktLTHNMS3N3c1ZOR2JMRkV0Ry9WWkZGRWFLUmlLMFFmVTg2VERMMG8xYXJrZXZiTXN5SFFwQktiZjN3N3hkS2pzRkk4L2RYOUFBQUFBQkpSVTVFcmtKZ2dnPT0iLz48aW1hZ2UgeD0iMzg1IiB5PSIxMjUuOTkiIHdpZHRoPSIzIiBoZWlnaHQ9IjQiIHhsaW5rOmhyZWY9ImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBQU1BQUFBRUNBWUFBQUJMTFlVSEFBQUFBWE5TUjBJQXJzNGM2UUFBQURSSlJFRlVDQjFqdUhManhuOG9ZR0RadkgwbkF5OFBMd01qRThOL0JxQW9nNmUzOS8rN0R4LzhaMklBQWgwZFBTREp5QUFBOXgwV3pVUjFWNzBBQUFBQVNVVk9SSzVDWUlJPSIvPjxpbWFnZSB4PSIzODUiIHk9IjEyNS45OSIgd2lkdGg9IjMiIGhlaWdodD0iNCIgeGxpbms6aHJlZj0iZGF0YTppbWFnZS9wbmc7YmFzZTY0LGlWQk9SdzBLR2dvQUFBQU5TVWhFVWdBQUFBTUFBQUFFQ0FZQUFBQkxMWVVIQUFBQUFYTlNSMElBcnM0YzZRQUFBRE5KUkVGVUNCMWpXTHRoMDM4Z1lBQmhKZ2FHL3d3d3dMaG43OTcvUDMvOFpQakR6TXpBOU83dE93Wm1GaFlHcHYvL0dBQjhxeFlCYnR3MTl3QUFBQUJKUlU1RXJrSmdnZz09Ii8+PHBhdGggZD0iTTM4Ni44NCAxMjguNDdjMCAuMjQuMDcuMzQuMTMuMzkuMDYuMDUgMCAuMDggMCAwYTEgMSAwIDAgMCAwLS41Ni45Mi45MiAwIDAgMC0uMTktLjQxYy0uMDUuMTEtLjAxLjI2LjA2LjU4eiIgZmlsbD0idXJsKCNjKSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTM4Ni43NiAxMjljMCAuMzEuMDYgMCAwLS4xN2EyLjA2IDIuMDYgMCAwIDAtLjE3LS43NWMtLjEtLjItLjI1LS40My0uMi0uMjkuMTk5LjM3Ni4zMjQuNzg3LjM3IDEuMjF6IiBmaWxsPSJ1cmwoI2QpIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48cGF0aCBkPSJNMzk2LjA4IDE0Ni42NWMwLS4zMy4wNy0uNjMuMS0uODkuMTctMiAuMTIzLTQuMDEtLjE0LTZhMS40OSAxLjQ5IDAgMCAwIDAtLjIxIDIyLjc3IDIyLjc3IDAgMCAxLTMuMjMgOC41IDMgMyAwIDAgMCAuNzMtLjVsLjIxLS4yYTkuNDIgOS40MiAwIDAgMCAxLjYyLTIuMzguNjYuNjYgMCAwIDAgMC0uMTF2LjEzYTEwLjM1IDEwLjM1IDAgMCAxLTEuMTYgNS43MSAzLjU1IDMuNTUgMCAwIDEtNCAxLjk0IDMuODQgMy44NCAwIDAgMCA0LjUyLTIuNjh2LjM2YTEwLjcgMTAuNyAwIDAgMS0uODcgMS40OCA1LjIyIDUuMjIgMCAwIDAgLjg0LTEuMDdjMCAuMjQgMCAuMzkuMDkuNDEuMDkuMDIuNjItLjkzLjk1LTIuMmE2LjQxIDYuNDEgMCAwIDAgLjM0LTIuMjl6bS0uNjYgMWExNCAxNCAwIDAgMCAuMTUtMi4xOGMwLS4zNCAwLS44LS4xLS44OC4yNTYtMS4xMDcuNDQtMi4yMy41NS0zLjM2djEuODNhMjIuNTcgMjIuNTcgMCAwIDEtLjIyIDMuNDVjMCAuMTQgMCAuMjgtLjA4LjQyLS4wOC4xNC0uMTkuMzktLjMuNjh2LjA0eiIgZmlsbD0idXJsKCNlKSIgZmlsbC1ydWxlPSJub256ZXJvIi8+PHBhdGggZD0iTTM4Ni43OCAxNDguNTdhOC4zMyA4LjMzIDAgMCAwLS42LTEuMzggMTMuOTEgMTMuOTEgMCAwIDEtLjI4LTMuMzRjMC0uNDYuMjQtMTMuNzYuMjQtMTQuMDdhLjg3Ljg3IDAgMCAwLS4wOC0uNDljMC0uMDctLjEzLS4xNy0uMDkgMCAuMDYyLjE0OS4wOS4zMS4wOC40NyAwIC4xNS0uMjggMTMuOTMtLjI4IDE0LjMzLS4wMTUuOTcuMDY5IDEuOTM4LjI1IDIuODktLjA2LS4wNi0uMTEtLjA5LS4xNC0uMDgtLjAzLjAxIDAgMCAwIC4xMWExNC43NSAxNC43NSAwIDAgMS0uMTgtMS43OGMwLS45My0uMDgtMy43OS0uMDctNCAwLS40My4zNS0xMS40NC4zMi0xMS43M2ExLjE1IDEuMTUgMCAwIDAtLjI0LS41MXMuMDYtLjExLjA1LS4yNGEuNTYuNTYgMCAwIDAgMCAuMDhsLS4wNi0uMjFhMy41MyAzLjUzIDAgMCAwLS4xLS40NiAyLjEzIDIuMTMgMCAwIDAtLjA5LS4zIDIuNDMgMi40MyAwIDAgMSAwLS41My4xLjEgMCAwIDAtLjExLS4wOHMtLjA2IDAtLjA3LjE4aC0uMDdjLS4wNyAwIDAgMCAwIC4wOGEyLjYxIDIuNjEgMCAwIDEgMC0uMjggMi40NiAyLjQ2IDAgMCAwIC4xOSAxLjQxYy4yNC41OC40NC40Ny40NSAxLjA5IDAgMS4wNi0uMjcgMTAuNC0uMjkgMTEuMjctLjAyLjg3IDAgMy40MSAwIDQuMzFhMTMuNjIgMTMuNjIgMCAwIDAgMS4yMiA1LjIxYy4yMTQuNDI5LjQ4Ny44MjYuODEgMS4xOGE5LjU4IDkuNTggMCAwIDEtLjktMS41N2MtLjExLS4yOC0uMjEtLjU1LS4zLS44LjMuNzcuNjEgMS4zMS43NCAxLjI2LjEzLS4wNSAwLS4wNyAwLS4xNi4yNi41MS42MTcuOTY1IDEuMDUgMS4zNGE5LjUyIDkuNTIgMCAwIDEtMS4wNy0xLjY2IDkuNTYgOS41NiAwIDAgMC0uMzgtMS41NHoiIGZpbGw9InVybCgjZikiIGZpbGwtcnVsZT0ibm9uemVybyIvPjxjaXJjbGUgY3g9IjE5MS4zNSIgY3k9IjE5MS40IiByPSIxOTAuOTEiIG9wYWNpdHk9Ii4zIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgyNCAyNCkiIGZpbGw9IiNGRkYiIGZpbGwtcnVsZT0ibm9uemVybyIvPjwvZz48L2c+PC9nPjwvc3ZnPg==");
+	background: #2474be;
+	background: radial-gradient(circle, #2474be 0, #0a1a35 100%);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: 50%;
 	background-size: cover;
 	box-shadow: 0 0 0 0 0 transparent;
 }
 
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__title {
-	font-size: 2rem;
+.s-ad-intercept-x-v2__title {
+	font-size: 1.625rem;
 	line-height: 1.125;
 	margin-bottom: 4px;
 	color: #fff;
 }
 
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__text {
-	font-family: SophosSansLight, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	font-size: 17px;
-	font-weight: normal;
+.s-ad-intercept-x-v2__text {
+	font-family: SophosSansLight, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
 	font-style: normal;
-	line-height: 1.325;
-	color: #fff;
-}
-
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__action {
-	margin-top: 15px;
-}
-
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__action .s-ad-phish-threat__action .s-button,
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__action .s-ad-phish-threat__action .uvStyle-status {
-	color: #fff;
-}
-
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__image {
-	display: inline-block;
-	max-width: 100%;
-	height: auto;
-	margin-top: 15px;
-	vertical-align: bottom;
-}
-
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-button--green {
-	font-family: SophosSansMedium, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 	font-size: .875rem;
-	font-weight: normal;
-	font-style: normal;
-	line-height: 1.5;
-	display: inline-block;
-	padding: .3125rem 1.25rem;
-	cursor: pointer;
-	transition: all linear .15s;
-	text-align: center;
-	text-decoration: none;
-	color: #f2f2f2;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #43ac38;
-	border-radius: 3px;
-	background-color: #43ac38;
-	text-shadow: none;
+	color: #fff;
 }
 
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-button--green:hover {
-	text-decoration: none;
+.s-ad-intercept-x-v2__action {
+	margin-top: 15px;
+}
+
+.s-ad-intercept-x-v2__action .s-button {
 	color: #fff;
-	border-color: #34862b;
-	background-color: #34862b;
+}
+
+.s-ad-intercept-x-v2__link-wrapper {
+	text-decoration: none;
+}
+
+.s-ad-intercept-x-v2__link-wrapper:hover .s-ad-intercept-x-v2 {
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+.s-ad-intercept-x-v2__image-frame {
+	transition: all .25s linear;
+	margin-top: 20px;
+	margin-bottom: -50px;
+	margin-bottom: -7%;
+}
+
+.s-ad-intercept-x-v2__image-xg-450 {
+	transition: all .25s linear;
+	max-width: 100%;
+}
+
+.s-ad-intercept-x-v2--face {
+	background-position: bottom;
+	background-size: cover;
+	background-color: #2654b3;
 }
 
 @font-face {
@@ -498,6 +524,115 @@ header.site-header.variation .header-container.is-open .main-navigation .exit-li
 	line-height: 1.25rem;
 	font-size: 1.0625rem;
 	padding: 1.25rem 1.625rem;
+}
+
+.demos-a .block {
+	margin-bottom: 0;
+}
+
+.demos-b {
+	background: linear-gradient(180deg, #055bb5 0%, #90bae0 43%, #e6f4fb 100%);
+}
+
+.demos-b .online-demos {
+	color: #fff;
+}
+
+.demos-b .online-demos header {
+	padding: 0 1em;
+}
+
+.demos-b .online-demos .block {
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+	padding: 1em 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	height: 250px;
+	max-width: 200px;
+	min-width: 160px;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.demos-b .online-demos .block h3 {
+	width: 100%;
+}
+
+.demos-b .online-demos .block p {
+	max-width: 14em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.demos-b .online-demos .block .btn {
+	background-color: #3bb044;
+	border-radius: 3px;
+	padding: 0.6em 1.5em;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 auto;
+}
+
+.online-demos {
+	text-align: center;
+}
+
+.online-demos a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.online-demos a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+.online-demos p,
+.online-demos .btn {
+	line-height: 1.25;
+}
+
+.online-demos header h2 {
+	margin-bottom: 0.25em;
+}
+
+.online-demos header p {
+	margin-bottom: 1.5em;
+}
+
+.online-demos .blocks {
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-ms-flex-pack: distribute;
+	justify-content: space-around;
+}
+
+.online-demos .block {
+	padding-left: .5em;
+	padding-right: .5em;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+.online-demos .block:hover {
+	margin-top: -.25em;
+	transition: margin-top 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.online-demos .block h3 {
+	font-weight: bold;
+	font-family: SophosSansMedium, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.online-demos .block p,
+.online-demos .block .btn {
+	font-size: .8em;
 }
 
 pre,
@@ -1342,6 +1477,11 @@ textarea {
 	margin-bottom: 1em;
 	padding-top: 1em;
 	padding-bottom: 1em;
+}
+
+body.home .widget.sophos-inline-ad {
+    padding: 0;
+	margin: 2em 0;
 }
 
 .widget_search,
@@ -4422,16 +4562,6 @@ article.sophos_video {
 }
 
 .visit-sophos {
-	background-image: url(img/sophos-feed-logo.png);
-	background-repeat: no-repeat;
-	background-position: 15px center;
-	background-position: .9375rem center;
-	overflow: hidden;
-	text-indent: 101%;
-	white-space: nowrap;
-	height: 45px;
-	height: 2.8125rem;
-	width: 100%;
 	display: block;
 	padding: 15px;
 	padding: .9375rem;
@@ -4440,6 +4570,12 @@ article.sophos_video {
 
 .visit-sophos:hover {
 	background-color: #276aa2;
+}
+
+.visit-sophos svg {
+    height: 15px;
+    fill: #fff;
+    margin: 0;
 }
 
 .tool-link {
@@ -5071,6 +5207,7 @@ body.single #newsletter-signup .newsletter-panel button.close-link {
 
 .newsletter-panel.contained {
 	background-color: #fcfcfc;
+    margin: 2em 0;
 }
 
 .newsletter-panel.contained .panel-content {
@@ -5337,6 +5474,16 @@ var:empty {
 .block.threats {
 	-ms-flex-direction: column;
 	flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 769px) {
+    .block.sophos,
+    .block.news,
+    .block.products,
+    .block.threats {
+    	align-items: flex-start;
+    }
 }
 
 .block.social {
@@ -5619,39 +5766,46 @@ header.site-header .header-container .main-navigation .exit-links li a:after {
 
 @media (min-width: 769px) {
 
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__grid-row {
-	display: -ms-flexbox;
-	display: flex;
+.s-ad-intercept-x-v2 {
+	padding-top: 25px;
+	padding-bottom: 20px;
 }
 
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__grid-column {
-	width: 50%;
-}
-
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__title {
-	margin-bottom: 8px;
-	text-align: left;
-}
-
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__text {
-	font-size: 22px;
-	text-align: left;
-}
-
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__action .s-ad-phish-threat__action .s-button,
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__action .s-ad-phish-threat__action .uvStyle-status {
-	font-size: 16px;
-}
-
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__action {
+.s-ad-intercept-x-v2__text {
 	position: absolute;
-	right: 20px;
-	bottom: 30px;
+	right: 30px;
+	bottom: 20px;
+	left: 30px;
+	margin-right: 175px;
+	text-align: right;
 }
 
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__image {
-	margin-top: -10px;
-	margin-bottom: -10px;
+.s-ad-intercept-x-v2__action {
+	position: absolute;
+	right: 30px;
+	bottom: 15px;
+	margin-top: 0;
+}
+
+.s-ad-intercept-x-v2__image-frame {
+	margin-bottom: -1%;
+}
+
+.s-ad-intercept-x-v2__image-xg-450 {
+	max-width: 380px;
+}
+
+.s-ad-intercept-x-v2--face {
+	min-height: 140px;
+	background-image: url("https://sophosnews.files.wordpress.com/2019/11/ad-intercept-x-face-horizontal.jpg");
+}
+
+.s-ad-intercept-x-v2--face .s-ad-intercept-x-v2__title {
+	position: absolute;
+	top: 40%;
+	right: 30px;
+	left: 30px;
+	transform: translateY(-50%);
 }
 
 }
@@ -6289,21 +6443,38 @@ header.site-header .header-container .main-navigation .exit-links.menu li.search
 
 @media (max-width: 768px) {
 
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat {
-	padding-top: 20px;
+.s-ad-intercept-x-v2--face {
+	padding-top: 90px;
+	background-image: url("https://sophosnews.files.wordpress.com/2019/11/ad-intercept-x-face.jpg");
 }
 
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__title {
-	font-size: 1.625rem;
+.s-ad-intercept-x-v2--face .s-ad-intercept-x-v2__title {
+	margin-bottom: 30px;
 }
 
-.widget.sophos-inline-ad .s-ad-phish-threat__link-wrapper .s-ad-phish-threat .s-ad-phish-threat__text {
-	font-size: 14px;
+.s-ad-intercept-x-v2--face .s-ad-intercept-x-v2__text {
+	max-width: 280px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 }
 
 @media screen and (max-width: 768px) {
+
+.demos-a .block {
+	-ms-flex-preferred-size: 50%;
+	flex-basis: 50%;
+}
+
+.demos-b .online-demos header h2 {
+	font-size: 3.5vw;
+}
+
+.demos-b .online-demos header p,
+.demos-b .online-demos header .btn {
+	font-size: 2.25vw;
+}
 
 #mobile-menu-switch,
 .main-navigation .menu .menu-item a,
@@ -6890,6 +7061,11 @@ body.tag .content-area {
 
 @media screen and (max-width: 480px) {
 
+.demos-b .online-demos header p,
+.demos-b .online-demos header .btn {
+	font-size: .75em;
+}
+
 .comment-respond .submit,
 input[type=submit] {
 	width: 100%;
@@ -6985,3 +7161,27 @@ img.alignright {
 
 }
 
+/**
+ * Use height 0, padding-top and absolute positioning to create a box with an intrinsic aspect ratio
+ * See https://alistapart.com/article/creating-intrinsic-ratios-for-video/
+ */
+footer .takeover-video-panel .video-container {
+    margin: 0 auto 6em auto;
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+footer .takeover-video-panel .container {
+    max-width: 60em;
+}
+
+footer .takeover-video-panel iframe {
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

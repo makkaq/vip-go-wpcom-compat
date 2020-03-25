@@ -90,11 +90,7 @@ function get_capabilities( $role ) {
  * @return string|bool
  */
 function get_attribute_or_meta( $user_id, $meta_key ) {
-	$function = ( function_exists( 'get_user_attribute' ) )
-			  ? 'get_user_attribute'
-			  : 'get_user_meta';
-
-	return $function( $user_id, $meta_key, true );
+	return get_user_meta( $user_id, $meta_key, true );
 }
 
 
@@ -108,11 +104,7 @@ function get_attribute_or_meta( $user_id, $meta_key ) {
  * @return string|bool
  */
 function delete_attribute_or_meta( $user_id, $meta_key, $meta_value = '' ) {
-	$function = ( function_exists( 'delete_user_attribute' ) )
-			  ? 'delete_user_attribute'
-			  : 'delete_user_meta';
-
-	return $function( $user_id, $meta_key, $meta_value );
+	return delete_user_meta( $user_id, $meta_key, $meta_value );
 }
 
 
@@ -154,11 +146,7 @@ function update_meta( $user_id, $meta_key, $meta_value ) {
 	}
 
 	if ( ! $return_value ) {
-		$function = ( function_exists( 'update_user_attribute' ) )
-			? 'update_user_attribute'
-			: 'update_user_meta';
-
-		$return_value = $function( $user_id, $meta_key, $meta_value );
+		$return_value = update_user_meta( $user_id, $meta_key, $meta_value );
 	}
 
 	return $return_value;

@@ -125,7 +125,9 @@ add_action( 'pre_amp_render_post', function () {
 
 		// Add our own Co-Authors compatible template
 		add_filter( 'amp_post_template_file', function ( $file, $template_type, $post ) {
-			if ( function_exists( 'get_coauthors' ) && ( 'meta-author.php' === array_pop( explode('/', $file ) ) ) ) {
+			$parts    = explode( '/', $file );
+			$filename = array_pop( $parts );
+			if ( function_exists( 'get_coauthors' ) && ( 'meta-author.php' === $filename ) ) {
 				return sprintf( '%s/inc/amp/meta-author.php', get_template_directory() );
 			}
 
@@ -180,6 +182,7 @@ add_action( 'pre_amp_render_post', function () {
 			<?php
 			echo strip_tags( file_get_contents( sprintf( '%s/css/header.amp.css', get_stylesheet_directory() ) ) );
 			echo strip_tags( file_get_contents( sprintf( '%s/css/ad.amp.css', get_stylesheet_directory() ) ) );
+			echo strip_tags( file_get_contents( sprintf( '%s/css/ad.xg-firewall.amp.css', get_stylesheet_directory() ) ) );
 
 			# Temporary override to set header width
 			?>

@@ -1,0 +1,133 @@
+.s-button--pill {
+    font-size: .6875rem;
+    padding: .125rem .625rem;
+}
+
+.s-ad-xg-firewall-v3 {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #242629;
+    font-family: SophosSansRegular, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    max-width: 769px;
+    margin: 15px auto;
+    padding: 30px 30px 25px;
+    transition: box-shadow .25s cubic-bezier(.645, .045, .355, 1);
+    text-align: center;
+    background-color: #0d141d;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    box-shadow: 0 0 0 0 0 transparent;
+    background-image: url(https://sophosnews.files.wordpress.com/2020/02/xg-firewall-v3-mist.jpg);
+}
+
+.s-ad-xg-firewall-v3__title {
+    font-size: 2rem;
+    line-height: 1.125;
+    margin-bottom: 4px;
+    color: #fff;
+}
+
+.s-ad-xg-firewall-v3__text {
+    font-family: SophosSansLight, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    color: #fff;
+}
+
+.s-ad-xg-firewall-v3__action {
+    margin-top: 15px;
+}
+
+.s-ad-xg-firewall-v3__action .s-button {
+    color: #fff;
+}
+
+.s-ad-xg-firewall-v3__link-wrapper {
+    text-decoration: none;
+}
+
+.s-ad-xg-firewall-v3__link-wrapper:hover .s-ad-xg-firewall-v3 {
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .15);
+}
+
+.s-ad-xg-firewall-v3__text {
+    font-family: SophosSansMedium, Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.325;
+}
+
+.s-ad-xg-firewall-v3__image-frame {
+    transition: all .25s linear;
+    margin-bottom: -90px;
+}
+
+.s-ad-xg-firewall-v3__image {
+    transition: all .25s linear;
+    width: 283px;
+    max-width: 283px;
+}
+
+.s-button.s-button--cobalt {
+    color: #f2f2f2;
+    border-color: #334762;
+    background-color: #334762;
+}
+
+.s-button.s-button--cobalt:hover {
+    color: #fff;
+    border-color: #023D7A;
+    background-color: #023D7A;
+}
+
+@media (min-width:769px) {
+    .s-ad-xg-firewall-v3__content {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+    }
+
+    .s-ad-xg-firewall-v3__text {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width:768px) {
+    .s-ad-xg-firewall-v3 {
+        padding-top: 50px;
+    }
+
+    .s-ad-xg-firewall-v3__title {
+        font-size: 1.625rem;
+    }
+
+    .s-ad-xg-firewall-v3__text {
+        font-size: 14px;
+    }
+
+    .s-ad-xg-firewall-v3 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .s-ad-xg-firewall-v3__text {
+        font-size: 16px;
+    }
+
+    .s-ad-xg-firewall-v3__image-frame {
+        margin-bottom: -40px;
+    }
+
+    .s-ad-xg-firewall-v3__image {
+        width: 190px;
+        max-width: 190px;
+    }
+}

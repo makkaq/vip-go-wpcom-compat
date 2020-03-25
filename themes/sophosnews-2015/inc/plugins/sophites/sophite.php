@@ -76,10 +76,9 @@ abstract class Sophite {
 			$version = get_transient( self::VERSION_KEY );
 
 			// If the transient doesn't exist or is out of date, or the role doesn't exist, create it.
-            // if ( false === $version || \Sophos\Role\VERSION > (float) $version || null === get_role( $role ) ) {
-            if ( 1 ) {
+            if ( false === $version || \Sophos\Role\VERSION > (float) $version || null === get_role( $role ) ) {
             	$this->create();
-				set_transient( self::VERSION_KEY, \Sophos\Role\VERSION, 10 );
+				set_transient( self::VERSION_KEY, \Sophos\Role\VERSION, 300 );
 			}
 		}
 	}

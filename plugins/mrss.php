@@ -1,6 +1,6 @@
 <?php
 
-wp_die( 'mrss.php loaded', E_USER_NOTICE );
+?><h1>mrss.php loaded</h1><?php
 
 /**
  * This is not a verbatim copy of WP.com's version.

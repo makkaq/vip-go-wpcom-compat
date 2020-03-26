@@ -1,5 +1,5 @@
 <?php
-
+?><h1>wpcom-plugins.php loaded</h1><?php
 /**
  * Loads a plugin on VIP Go, with compatability for the way things were done on WPcom.
  * Compatability for both WPcom's deprecated plugin versioning and the deprecated folder locations (theme & plugin).

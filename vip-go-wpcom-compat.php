@@ -1,4 +1,5 @@
 <?php
+?><h1>vip-go-wpcom-compat.php loaded</h1><?php
 /**
  * Plugin Name: WordPress.com Compatibility
  */
